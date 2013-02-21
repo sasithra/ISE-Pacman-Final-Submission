@@ -1,0 +1,171 @@
+import sqlite3 as lite
+import sys
+
+class Connection:
+	def __init__(self, db_name):
+		self.con = lite.connect(db_name)
+		with self.con:
+			self.cur = self.con.cursor()
+			self.createTables()
+			self.iniTables()
+
+# Create tables
+	def createTables(self):
+		self.cur.execute("CREATE TABLE IF NOT EXISTS Users("
+				"name STRING, "
+				"password STRING, "
+				"question STRING, "
+				"answer STRING, "
+				"highscore INT)")
+		self.cur.execute("CREATE TABLE IF NOT EXISTS Highscores("
+				"id INT,"
+				"name STRING,"
+				"score INT)")
+
+# Create User
+	def createUser(self, username, password, question, answer):
+		with self.con:
+			self.cur.execute("INSERT INTO Users VALUES('"
+					+username+"','"
+					+password+"','"
+					+question+"','"
+					+answer+"',"
+					"0000);")
+
+# Init highscore if empty
+	def iniTables(self):
+		with self.con:
+			self.cur.execute("SELECT * FROM Highscores;")
+			i = len(self.cur.fetchall())
+			if (i == 0):
+				for j in range(0, 10):
+					self.cur.execute("INSERT INTO Highscores VALUES("
+							""+str(j+1)+","
+							"'Empty',"
+							"0000);")
+
+# Check if user exists
+	def checkUser(self, username):
+		with self.con:
+			self.cur.execute("SELECT name FROM Users WHERE name='"+username+"';")
+			i = len(self.cur.fetchall())
+			print i
+			if i == 1:
+				return True
+			else:
+				return False
+
+# Check if answe is correct
+	def checkAnswer(self, username, answer):
+		with self.con:
+			self.cur.execute("SELECT name FROM Users WHERE name='"+username+"'"
+					" AND answer='"+answer+"';")
+			i = len(self.cur.fetchall())
+			if i == 1:
+				return True
+			else:
+				return False
+
+# Check if user is associated with password
+	def checkPassword(self,username, password):
+		with self.con:
+			self.cur.execute("SELECT name FROM Users WHERE name='"+username+"' AND"
+					" password='"+password+"';")
+			i = len(self.cur.fetchall())
+			if i == 1:
+				return True
+			else:
+				return False
+
+# Get the user's security question
+	def getQuestion(self, username):
+		with self.con:
+			self.cur.execute("SELECT question FROM Users WHERE name='"
+					+username+"';")
+			question = self.cur.fetchall()
+			for qst in question:
+				for q in qst:
+					return q
+
+# Get the user's personal best
+	def getScore(self, username):
+		with self.con:
+			self.cur.execute("SELECT highscore FROM Users WHERE name='"
+					+username+"';")
+			score = self.cur.fetchall()
+			for sc in score:
+				for s in sc:
+					return s
+
+## Update High scores
+	def updateHighscores(self, user):
+		self.updatePersonalHighscore(user)
+		self.updateHighscore(user)
+
+## Update User's high score
+	def updatePersonalHighscore(self, user):
+		with self.con:
+			score = str(user.highscore)
+			name = user.username
+			self.cur.execute("UPDATE Users "
+					"SET highscore="+score+" "
+					"WHERE name='"+name+"';")
+
+## Update High Score list
+	def updateHighscore(self, user):
+		with self.con:
+			print '1'
+			ID = True
+			name = user.username
+			userscore = user.highscore
+			scores = self.getHighscores("ASC")
+			
+			for i in scores:
+				for j in i:
+					try:
+						print 2
+						if (ID):
+							id_ = int(j)
+						elif (not ID) and (int(userscore) > int(j)):
+							print 3
+							self.cur.execute("UPDATE Highscores "
+									"SET name='"+name+"', score='"+str(userscore)+"' "
+									"WHERE id='"+str(id_)+"'")
+							break
+						elif (not ID) and (int(userscore) < int(j)):
+							ID = True
+					except:
+						ID = False
+
+# Change Password
+	def changePassword(self, name, password):
+		with self.con:
+			self.cur.execute("UPDATE Users "
+					"SET password='"+password+"' "
+					"WHERE name='"+name+"';")
+
+# Change Real Name
+	def changeName(self, name, realname):
+		with self.con:
+			self.cur.execute("UPDATE Users "
+					"SET realname='"+realname+"'"
+					"WHERE name='"+name+"'")
+
+# Change Security
+	def changeSecurity(self, name, question, answer):
+		print question
+		print answer
+		with self.con:
+			self.cur.execute("UPDATE Users "
+					"SET question='"+question+"',"
+					" answer='"+answer+"' "
+					"WHERE name='"+name+"';")
+
+
+# Get a list of high scores
+	def getHighscores(self, direction):
+		with self.con:
+			self.cur.execute("SELECT * FROM Highscores ORDER BY score "
+					""+str(direction)+" LIMIT 10;")
+			return self.cur.fetchall()
+

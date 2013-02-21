@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>org.gameplay.Ghost.Ghost</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="org-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="org-module.html">Package&nbsp;org</a> ::
+        <a href="org.gameplay-module.html">Package&nbsp;gameplay</a> ::
+        <a href="org.gameplay.Ghost-module.html">Module&nbsp;Ghost</a> ::
+        Class&nbsp;Ghost
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="org.gameplay.Ghost.Ghost-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class Ghost</h1><p class="nomargin-top"><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost">source&nbsp;code</a></span></p>
+<pre class="base-tree">
+       object --+        
+                |        
+<a href="org.gameplay.GameItem.GameItem-class.html">GameItem.GameItem</a> --+    
+                    |    
+        <a href="org.gameplay.Sprite.Sprite-class.html">Sprite.Sprite</a> --+
+                        |
+                       <strong class="uidshort">Ghost</strong>
+</pre>
+
+<hr />
+<p>Ghost class Inherits from the Sprite class. This class initializes and
+  controls all game logic involving Ghost sprites. It interacts with the 
+  Canvas that is responsible for drawing each instance of the Ghosts and 
+  uses the Gameplay class as a controller to interact with other characters
+  in the game.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">gameManager</span>,
+        <span class="summary-sig-arg">gameCanvas</span>,
+        <span class="summary-sig-arg">ID</span>,
+        <span class="summary-sig-arg">specs</span>)</span><br />
+      Initialization This method creates a Ghost instance, initializes it 
+      and draws it</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#draw" class="summary-sig-name">draw</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Draw.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.draw">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#initGame" class="summary-sig-name">initGame</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Initial game settings.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.initGame">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#restart" class="summary-sig-name">restart</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Restart.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.restart">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#start" class="summary-sig-name">start</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Start.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.start">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#started_" class="summary-sig-name">started_</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Started.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.started_">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#checkStartingConditions" class="summary-sig-name">checkStartingConditions</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Check Starting Conditions.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.checkStartingConditions">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#eat" class="summary-sig-name">eat</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Eat.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.eat">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#chase" class="summary-sig-name">chase</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Chase.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.chase">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#scatter" class="summary-sig-name">scatter</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Scatter.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.scatter">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#returnToPen" class="summary-sig-name">returnToPen</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return to Pen.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.returnToPen">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#fright" class="summary-sig-name">fright</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">frightCycles</span>)</span><br />
+      Fright.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.fright">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#isInTunnel" class="summary-sig-name">isInTunnel</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Is In Tunnel.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.isInTunnel">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#reverseDirection" class="summary-sig-name">reverseDirection</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Reverse Direction.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.reverseDirection">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#toggleColor" class="summary-sig-name">toggleColor</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Toggle Color.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.toggleColor">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#toggleState" class="summary-sig-name">toggleState</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Toggle State.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.toggleState">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#returnToNormalState" class="summary-sig-name">returnToNormalState</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return to Normal State.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.returnToNormalState">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#process" class="summary-sig-name">process</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Process.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.process">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#destinationTile" class="summary-sig-name">destinationTile</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Destination Tile.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.destinationTile">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#setNextDirection" class="summary-sig-name">setNextDirection</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Set Next Direction.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.setNextDirection">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#shortestDistance" class="summary-sig-name">shortestDistance</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">dirDict</span>,
+        <span class="summary-sig-arg">destX</span>,
+        <span class="summary-sig-arg">destY</span>)</span><br />
+      Shortest Distance.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.shortestDistance">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="org.gameplay.Ghost.Ghost-class.html#distance" class="summary-sig-name">distance</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">x1</span>,
+        <span class="summary-sig-arg">y1</span>,
+        <span class="summary-sig-arg">x2</span>,
+        <span class="summary-sig-arg">y2</span>)</span><br />
+      Distance.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.distance">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="org.gameplay.Sprite.Sprite-class.html">Sprite.Sprite</a></code></b>:
+      <code><a href="org.gameplay.Sprite.Sprite-class.html#correctPosition">correctPosition</a></code>,
+      <code><a href="org.gameplay.Sprite.Sprite-class.html#doMove">doMove</a></code>,
+      <code><a href="org.gameplay.Sprite.Sprite-class.html#inCentreOfTile">inCentreOfTile</a></code>,
+      <code><a href="org.gameplay.Sprite.Sprite-class.html#inTile">inTile</a></code>,
+      <code><a href="org.gameplay.Sprite.Sprite-class.html#isPastCentreOfTile">isPastCentreOfTile</a></code>,
+      <code><a href="org.gameplay.Sprite.Sprite-class.html#move">move</a></code>,
+      <code><a href="org.gameplay.Sprite.Sprite-class.html#movingThroughTunnel">movingThroughTunnel</a></code>,
+      <code><a href="org.gameplay.Sprite.Sprite-class.html#stop">stop</a></code>,
+      <code><a href="org.gameplay.Sprite.Sprite-class.html#wallAhead">wallAhead</a></code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="org.gameplay.GameItem.GameItem-class.html">GameItem.GameItem</a></code></b>:
+      <code><a href="org.gameplay.GameItem.GameItem-class.html#changeColor">changeColor</a></code>,
+      <code><a href="org.gameplay.GameItem.GameItem-class.html#deleteDrawing">deleteDrawing</a></code>,
+      <code><a href="org.gameplay.GameItem.GameItem-class.html#findCurrentOverlappingWith">findCurrentOverlappingWith</a></code>,
+      <code><a href="org.gameplay.GameItem.GameItem-class.html#findOverlappingWith">findOverlappingWith</a></code>,
+      <code><a href="org.gameplay.GameItem.GameItem-class.html#getCoord">getCoord</a></code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Properties</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Properties"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">gameManager</span>,
+        <span class="sig-arg">gameCanvas</span>,
+        <span class="sig-arg">ID</span>,
+        <span class="sig-arg">specs</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Initialization This method creates a Ghost instance, initializes it 
+  and draws it</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>gameCanvas</code></strong> - Reference to the drawing canvas for drawing purposes</li>
+        <li><strong class="pname"><code>specs</code></strong> - Specifies the coordinates, radius, color, tag and speed 
+          associated with the ghost.</li>
+    </ul></dd>
+    <dt>Overrides:
+        object.__init__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="draw"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">draw</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.draw">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Draw. This method interacts with the Canvas to draw the Ghost 
+  character.</p>
+  <dl class="fields">
+    <dt>Overrides:
+        <a href="org.gameplay.GameItem.GameItem-class.html#draw">GameItem.GameItem.draw</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="initGame"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">initGame</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.initGame">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Initial game settings. This method prepares the ghost for the start of
+  a game.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="restart"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">restart</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.restart">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Restart. Reset the ghost to starting position and conditions.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="start"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">start</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.start">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Start. Move the ghost to the starting position outside the ghost 
+  enclosure and set it as started.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="started_"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">started_</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.started_">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Started. Set ghost initial direction.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="checkStartingConditions"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">checkStartingConditions</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.checkStartingConditions">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Check Starting Conditions. Release the ghost if the number of dots 
+  eaten exceeds the minimal amount.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="eat"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">eat</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.eat">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Eat. This method returns the ghost to the ghost enclosure after being 
+  eaten.</p>
+  <dl class="fields">
+    <dt>Returns:</dt>
+        <dd>: The number of points associated with eating a ghost</dd>
+    <dt>Overrides:
+        <a href="org.gameplay.Sprite.Sprite-class.html#eat">Sprite.Sprite.eat</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="chase"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">chase</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.chase">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Chase. This method set the ghost state to chase and sets the 
+  destination tile for the ghost.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="scatter"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">scatter</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.scatter">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Scatter. This method set the ghost state to scatter and sets the 
+  destination tile for the ghost.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="returnToPen"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">returnToPen</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.returnToPen">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return to Pen. This method set the ghost state to eaten and sets the 
+  destination tile for the ghost.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="fright"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">fright</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">frightCycles</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.fright">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Fright. This method set the ghost state to fright which will last for 
+  a limited amount of time.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>frightCycles</code></strong> - The number of iterations for the ghost to remain in fright mode.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="isInTunnel"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">isInTunnel</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.isInTunnel">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Is In Tunnel. This method determines if the ghost is in the tunnel 
+  regions of the map.</p>
+  <dl class="fields">
+    <dt>Returns:</dt>
+        <dd>: True - If ghost is in the tunnel. False - If ghost is not in 
+          the tunnel</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="reverseDirection"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">reverseDirection</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.reverseDirection">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Reverse Direction. This method reverses the ghost's current 
+  direction.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="toggleColor"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">toggleColor</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.toggleColor">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Toggle Color. This method changes the current ghost color in order to 
+  flicker between white and blue while in fright mode.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="toggleState"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">toggleState</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.toggleState">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Toggle State. This method toggles the Ghost's current state between 
+  scatter and chase. If the ghost is in neither of these states currently, 
+  the stateflag will retain the expected state for the ghost so that when 
+  it exits its current state it will return to the state specified by 
+  stateflag instead.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="returnToNormalState"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">returnToNormalState</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.returnToNormalState">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return to Normal State. This method sets the Ghost's current to the 
+  one specified by stateflag.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="process"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">process</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.process">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Process. This method takes care of all the processing for the ghost 
+  for the current iteration. It takes care of determining the next step 
+  based on the current state as well as wall avoidance during 
+  navigation.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="destinationTile"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">destinationTile</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.destinationTile">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Destination Tile. This method determines the destination tile for the 
+  ghost based on its current state.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="setNextDirection"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">setNextDirection</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.setNextDirection">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set Next Direction. This method determines and set the next direction 
+  for the ghost based on its available moves from its current tile.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="shortestDistance"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">shortestDistance</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">dirDict</span>,
+        <span class="sig-arg">destX</span>,
+        <span class="sig-arg">destY</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.shortestDistance">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Shortest Distance. This method determines the shortest distance to the
+  destination based on the available directions.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>dirDict</code></strong> - The dicitonary containing the available directions.</li>
+        <li><strong class="pname"><code>destX</code></strong> - They x-coordinate for the destination tile.</li>
+        <li><strong class="pname"><code>destY</code></strong> - They y-coordinate for the destination tile.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>nextDir: The direction that results in the shortest distance.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="distance"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">distance</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">x1</span>,
+        <span class="sig-arg">y1</span>,
+        <span class="sig-arg">x2</span>,
+        <span class="sig-arg">y2</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="org.gameplay.Ghost-pysrc.html#Ghost.distance">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Distance. This method calculates the distance between two points.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>x1</code></strong> - They x-coordinate for the first point.</li>
+        <li><strong class="pname"><code>y1</code></strong> - They y-coordinate for the first point.</li>
+        <li><strong class="pname"><code>x2</code></strong> - They x-coordinate for the second point.</li>
+        <li><strong class="pname"><code>y2</code></strong> - They y-coordinate for the second point.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>distance: the euclidean distance between the two points.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="org-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Dec  6 23:58:26 2012
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

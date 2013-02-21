@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>org.gameplay.Pacman</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="org-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="org-module.html">Package&nbsp;org</a> ::
+        <a href="org.gameplay-module.html">Package&nbsp;gameplay</a> ::
+        Module&nbsp;Pacman
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="org.gameplay.Pacman-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="org.gameplay.Pacman-module.html">Module org.gameplay.Pacman</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-docstring">Pacman</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-docstring">@author:: Jason Cohen</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-docstring">@author:: Shaun Hamelin-Owens</tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-docstring">@author:: Sasithra Thanabalan</tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-docstring">@author:: Andrew Walker</tt> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"><tt class="py-comment"># Imports</tt> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-0" class="py-name" targets="Module org.gameplay.Sprite=org.gameplay.Sprite-module.html,Class org.gameplay.Sprite.Sprite=org.gameplay.Sprite.Sprite-class.html"><a title="org.gameplay.Sprite
+org.gameplay.Sprite.Sprite" class="py-name" href="#" onclick="return doclink('link-0', 'Sprite', 'link-0');">Sprite</a></tt> <tt class="py-keyword">import</tt> <tt id="link-1" class="py-name"><a title="org.gameplay.Sprite
+org.gameplay.Sprite.Sprite" class="py-name" href="#" onclick="return doclink('link-1', 'Sprite', 'link-0');">Sprite</a></tt> </tt>
+<a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-2" class="py-name" targets="Package org.display=org.display-module.html"><a title="org.display" class="py-name" href="#" onclick="return doclink('link-2', 'display', 'link-2');">display</a></tt> <tt class="py-keyword">import</tt> <tt id="link-3" class="py-name" targets="Module org.display.DrawingGenerics=org.display.DrawingGenerics-module.html"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-3', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt> </tt>
+<a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line"> </tt>
+<a name="Pacman"></a><div id="Pacman-def"><a name="L12"></a><tt class="py-lineno"> 12</tt> <a class="py-toggle" href="#" id="Pacman-toggle" onclick="return toggle('Pacman');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="org.gameplay.Pacman.Pacman-class.html">Pacman</a><tt class="py-op">(</tt><tt class="py-base-class">Sprite</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Pacman-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Pacman-expanded"><a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line"><tt class="py-docstring">        Pacman class</tt> </tt>
+<a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line"><tt class="py-docstring">        Inherits from the Sprite class. This class initializes and controls all game logic involving the Pacman Sprite.</tt> </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line"><tt class="py-docstring">        It interacts with the Canvas that is responsible for drawing it</tt> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line"><tt class="py-docstring">        and uses the Gameplay class as a controller to interact with other characters in the game.</tt> </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line"> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line"><tt class="py-comment">## Init the Pacman instance</tt> </tt>
+<a name="Pacman.__init__"></a><div id="Pacman.__init__-def"><a name="L21"></a><tt class="py-lineno"> 21</tt> <a class="py-toggle" href="#" id="Pacman.__init__-toggle" onclick="return toggle('Pacman.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.gameplay.Pacman.Pacman-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">gameManager</tt><tt class="py-op">,</tt> <tt class="py-param">gameCanvas</tt><tt class="py-op">,</tt> <tt class="py-param">specs</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Pacman.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Pacman.__init__-expanded"><a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line"><tt class="py-docstring">                Initialization.</tt> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line"><tt class="py-docstring">                Class constructor for the Pacman.</tt> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line"><tt class="py-docstring">                Sets up the specs for a new game/level.</tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line"><tt class="py-docstring">                @param gameManager: The Game object (from org/Pacman.py)</tt> </tt>
+<a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line"><tt class="py-docstring">                @param gameCanvas: The game tk canvas object (on which the game is drawn)</tt> </tt>
+<a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line"><tt class="py-docstring">                @param specs: The level/map specifications</tt> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">state</tt> <tt class="py-op">=</tt> <tt id="link-4" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-4', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-5" class="py-name" targets="Variable org.display.DrawingGenerics.PACMAN_STATE=org.display.DrawingGenerics-module.html#PACMAN_STATE"><a title="org.display.DrawingGenerics.PACMAN_STATE" class="py-name" href="#" onclick="return doclink('link-5', 'PACMAN_STATE', 'link-5');">PACMAN_STATE</a></tt><tt class="py-op">[</tt><tt class="py-string">'Normal'</tt><tt class="py-op">]</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line">                <tt class="py-name">super</tt><tt class="py-op">(</tt><tt id="link-6" class="py-name" targets="Module org.Pacman=org.Pacman-module.html,Module org.gameplay.Pacman=org.gameplay.Pacman-module.html,Class org.gameplay.Pacman.Pacman=org.gameplay.Pacman.Pacman-class.html"><a title="org.Pacman
+org.gameplay.Pacman
+org.gameplay.Pacman.Pacman" class="py-name" href="#" onclick="return doclink('link-6', 'Pacman', 'link-6');">Pacman</a></tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt id="link-7" class="py-name" targets="Method org.Pacman.Account.__init__()=org.Pacman.Account-class.html#__init__,Method org.Pacman.Game.__init__()=org.Pacman.Game-class.html#__init__,Method org.Pacman.Guest.__init__()=org.Pacman.Guest-class.html#__init__,Method org.Pacman.HighScores.__init__()=org.Pacman.HighScores-class.html#__init__,Method org.Pacman.RootConfigure.__init__()=org.Pacman.RootConfigure-class.html#__init__,Method org.Pacman.User.__init__()=org.Pacman.User-class.html#__init__,Method org.db.DbInt.Connection.__init__()=org.db.DbInt.Connection-class.html#__init__,Method org.display.ForgotFrame.ChangeFrame.__init__()=org.display.ForgotFrame.ChangeFrame-class.html#__init__,Method org.display.ForgotFrame.ForgotFrame.__init__()=org.display.ForgotFrame.ForgotFrame-class.html#__init__,Method org.display.ForgotFrame.ForgotPassFrame.__init__()=org.display.ForgotFrame.ForgotPassFrame-class.html#__init__,Method org.display.FrameMaster.BackFrame.__init__()=org.display.FrameMaster.BackFrame-class.html#__init__,Method org.display.FrameMaster.ErrorFrame.__init__()=org.display.FrameMaster.ErrorFrame-class.html#__init__,Method org.display.FrameMaster.FrameMaster.__init__()=org.display.FrameMaster.FrameMaster-class.html#__init__,Method org.display.GameFrame.GameFrame.__init__()=org.display.GameFrame.GameFrame-class.html#__init__,Method org.display.GameFrame.HelpFrame.__init__()=org.display.GameFrame.HelpFrame-class.html#__init__,Method org.display.GameFrame.InfoFrame.__init__()=org.display.GameFrame.InfoFrame-class.html#__init__,Method org.display.GameFrame.LivesFrame.__init__()=org.display.GameFrame.LivesFrame-class.html#__init__,Method org.display.GameFrame.MGameFrame.__init__()=org.display.GameFrame.MGameFrame-class.html#__init__,Method org.display.GameFrame.ScoreFrame.__init__()=org.display.GameFrame.ScoreFrame-class.html#__init__,Method org.display.GameFrame.closeFrame.__init__()=org.display.GameFrame.closeFrame-class.html#__init__,Method org.display.GameFrame.mainFrame.__init__()=org.display.GameFrame.mainFrame-class.html#__init__,Method org.display.LoginFrame.ErrorFrame.__init__()=org.display.LoginFrame.ErrorFrame-class.html#__init__,Method org.display.LoginFrame.LoginFrame.__init__()=org.display.LoginFrame.LoginFrame-class.html#__init__,Method org.display.LoginFrame.MLoginFrame.__init__()=org.display.LoginFrame.MLoginFrame-class.html#__init__,Method org.display.MenuFrame.HighScore.__init__()=org.display.MenuFrame.HighScore-class.html#__init__,Method org.display.MenuFrame.InstructionFrame.__init__()=org.display.MenuFrame.InstructionFrame-class.html#__init__,Method org.display.MenuFrame.MainMenuFrame.__init__()=org.display.MenuFrame.MainMenuFrame-class.html#__init__,Method org.display.MenuFrame.MenuFrame.__init__()=org.display.MenuFrame.MenuFrame-class.html#__init__,Method org.display.NewUserFrame.NewFrame.__init__()=org.display.NewUserFrame.NewFrame-class.html#__init__,Method org.display.NewUserFrame.NewUserFrame.__init__()=org.display.NewUserFrame.NewUserFrame-class.html#__init__,Method org.display.OptionFrame.MainOptionFrame.__init__()=org.display.OptionFrame.MainOptionFrame-class.html#__init__,Method org.display.OptionFrame.OptionFrame.__init__()=org.display.OptionFrame.OptionFrame-class.html#__init__,Method org.gameplay.BonusItem.BonusItem.__init__()=org.gameplay.BonusItem.BonusItem-class.html#__init__,Method org.gameplay.Dot.Dot.__init__()=org.gameplay.Dot.Dot-class.html#__init__,Method org.gameplay.Energizer.Energizer.__init__()=org.gameplay.Energizer.Energizer-class.html#__init__,Method org.gameplay.GameItem.GameItem.__init__()=org.gameplay.GameItem.GameItem-class.html#__init__,Method org.gameplay.Gameplay.GamePlay.__init__()=org.gameplay.Gameplay.GamePlay-class.html#__init__,Method org.gameplay.Ghost.Ghost.__init__()=org.gameplay.Ghost.Ghost-class.html#__init__,Method org.gameplay.Pacman.Pacman.__init__()=org.gameplay.Pacman.Pacman-class.html#__init__,Method org.gameplay.PointItem.PointItem.__init__()=org.gameplay.PointItem.PointItem-class.html#__init__,Method org.gameplay.Sprite.Sprite.__init__()=org.gameplay.Sprite.Sprite-class.html#__init__,Method org.gameplay.Wall.Wall.__init__()=org.gameplay.Wall.Wall-class.html#__init__,Method org.menu.ForgotMenu.ForgotMenu.__init__()=org.menu.ForgotMenu.ForgotMenu-class.html#__init__,Method org.menu.GameMenu.GameMenu.__init__()=org.menu.GameMenu.GameMenu-class.html#__init__,Method org.menu.LoginMenu.LoginMenu.__init__()=org.menu.LoginMenu.LoginMenu-class.html#__init__,Method org.menu.NewUser.NewUserMenu.__init__()=org.menu.NewUser.NewUserMenu-class.html#__init__,Method org.menu.OptionsMenu.OptionMenu.__init__()=org.menu.OptionsMenu.OptionMenu-class.html#__init__"><a title="org.Pacman.Account.__init__
+org.Pacman.Game.__init__
+org.Pacman.Guest.__init__
+org.Pacman.HighScores.__init__
+org.Pacman.RootConfigure.__init__
+org.Pacman.User.__init__
+org.db.DbInt.Connection.__init__
+org.display.ForgotFrame.ChangeFrame.__init__
+org.display.ForgotFrame.ForgotFrame.__init__
+org.display.ForgotFrame.ForgotPassFrame.__init__
+org.display.FrameMaster.BackFrame.__init__
+org.display.FrameMaster.ErrorFrame.__init__
+org.display.FrameMaster.FrameMaster.__init__
+org.display.GameFrame.GameFrame.__init__
+org.display.GameFrame.HelpFrame.__init__
+org.display.GameFrame.InfoFrame.__init__
+org.display.GameFrame.LivesFrame.__init__
+org.display.GameFrame.MGameFrame.__init__
+org.display.GameFrame.ScoreFrame.__init__
+org.display.GameFrame.closeFrame.__init__
+org.display.GameFrame.mainFrame.__init__
+org.display.LoginFrame.ErrorFrame.__init__
+org.display.LoginFrame.LoginFrame.__init__
+org.display.LoginFrame.MLoginFrame.__init__
+org.display.MenuFrame.HighScore.__init__
+org.display.MenuFrame.InstructionFrame.__init__
+org.display.MenuFrame.MainMenuFrame.__init__
+org.display.MenuFrame.MenuFrame.__init__
+org.display.NewUserFrame.NewFrame.__init__
+org.display.NewUserFrame.NewUserFrame.__init__
+org.display.OptionFrame.MainOptionFrame.__init__
+org.display.OptionFrame.OptionFrame.__init__
+org.gameplay.BonusItem.BonusItem.__init__
+org.gameplay.Dot.Dot.__init__
+org.gameplay.Energizer.Energizer.__init__
+org.gameplay.GameItem.GameItem.__init__
+org.gameplay.Gameplay.GamePlay.__init__
+org.gameplay.Ghost.Ghost.__init__
+org.gameplay.Pacman.Pacman.__init__
+org.gameplay.PointItem.PointItem.__init__
+org.gameplay.Sprite.Sprite.__init__
+org.gameplay.Wall.Wall.__init__
+org.menu.ForgotMenu.ForgotMenu.__init__
+org.menu.GameMenu.GameMenu.__init__
+org.menu.LoginMenu.LoginMenu.__init__
+org.menu.NewUser.NewUserMenu.__init__
+org.menu.OptionsMenu.OptionMenu.__init__" class="py-name" href="#" onclick="return doclink('link-7', '__init__', 'link-7');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">gameCanvas</tt><tt class="py-op">,</tt> <tt class="py-name">specs</tt><tt class="py-op">)</tt> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line">                 </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">specs</tt> <tt class="py-op">=</tt> <tt class="py-name">specs</tt> </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line">                 </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">energizeCycles</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+<a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">counter</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+<a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line">                 </tt>
+<a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">xStart</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">specs</tt><tt class="py-op">[</tt><tt class="py-string">'xCenter'</tt><tt class="py-op">]</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">yStart</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">specs</tt><tt class="py-op">[</tt><tt class="py-string">'yCenter'</tt><tt class="py-op">]</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line">                 </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">halt</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line">                 </tt>
+<a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">gameManager</tt> <tt class="py-op">=</tt> <tt class="py-name">gameManager</tt> </tt>
+<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line">                 </tt>
+<a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-8" class="py-name" targets="Method org.gameplay.GameItem.GameItem.draw()=org.gameplay.GameItem.GameItem-class.html#draw,Method org.gameplay.Ghost.Ghost.draw()=org.gameplay.Ghost.Ghost-class.html#draw,Method org.gameplay.Pacman.Pacman.draw()=org.gameplay.Pacman.Pacman-class.html#draw,Method org.gameplay.PointItem.PointItem.draw()=org.gameplay.PointItem.PointItem-class.html#draw,Method org.gameplay.Sprite.Sprite.draw()=org.gameplay.Sprite.Sprite-class.html#draw,Method org.gameplay.Wall.Wall.draw()=org.gameplay.Wall.Wall-class.html#draw"><a title="org.gameplay.GameItem.GameItem.draw
+org.gameplay.Ghost.Ghost.draw
+org.gameplay.Pacman.Pacman.draw
+org.gameplay.PointItem.PointItem.draw
+org.gameplay.Sprite.Sprite.draw
+org.gameplay.Wall.Wall.draw" class="py-name" href="#" onclick="return doclink('link-8', 'draw', 'link-8');">draw</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-9" class="py-name" targets="Method org.gameplay.Gameplay.GamePlay.bindKeys()=org.gameplay.Gameplay.GamePlay-class.html#bindKeys,Method org.gameplay.Pacman.Pacman.bindKeys()=org.gameplay.Pacman.Pacman-class.html#bindKeys"><a title="org.gameplay.Gameplay.GamePlay.bindKeys
+org.gameplay.Pacman.Pacman.bindKeys" class="py-name" href="#" onclick="return doclink('link-9', 'bindKeys', 'link-9');">bindKeys</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line">                 </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line">                <tt class="py-comment">## Desired Direction, used when keypress</tt> </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">desiredDir</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
+<a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line">                 </tt>
+<a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-10" class="py-name" targets="Method org.gameplay.Ghost.Ghost.initGame()=org.gameplay.Ghost.Ghost-class.html#initGame,Method org.gameplay.Pacman.Pacman.initGame()=org.gameplay.Pacman.Pacman-class.html#initGame"><a title="org.gameplay.Ghost.Ghost.initGame
+org.gameplay.Pacman.Pacman.initGame" class="py-name" href="#" onclick="return doclink('link-10', 'initGame', 'link-10');">initGame</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line"> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line"> </tt>
+<a name="Pacman.draw"></a><div id="Pacman.draw-def"><a name="L55"></a><tt class="py-lineno"> 55</tt> <a class="py-toggle" href="#" id="Pacman.draw-toggle" onclick="return toggle('Pacman.draw');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.gameplay.Pacman.Pacman-class.html#draw">draw</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Pacman.draw-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Pacman.draw-expanded"><a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line"><tt class="py-docstring">                Draw.</tt> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line"><tt class="py-docstring">                This method interacts with the Canvas to draw the Pacman character.</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">canvasID</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">gameCanvas</tt><tt class="py-op">.</tt><tt class="py-name">create_oval</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">xLeft</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">yTop</tt><tt class="py-op">,</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">xRight</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">yBottom</tt><tt class="py-op">,</tt> <tt class="py-name">fill</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">color</tt><tt class="py-op">,</tt> <tt class="py-name">tags</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">tagType</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line"> </tt>
+<a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line">                                 </tt>
+<a name="Pacman.initGame"></a><div id="Pacman.initGame-def"><a name="L65"></a><tt class="py-lineno"> 65</tt> <a class="py-toggle" href="#" id="Pacman.initGame-toggle" onclick="return toggle('Pacman.initGame');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.gameplay.Pacman.Pacman-class.html#initGame">initGame</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Pacman.initGame-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Pacman.initGame-expanded"><a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line"><tt class="py-docstring">                Initial game settings.</tt> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line"><tt class="py-docstring">                This method prepares the pacman for the start of a game.</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line">                 </tt>
+<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">                <tt class="py-comment"># Pacman starts by moving to the left</tt> </tt>
+<a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">left</tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt>           <tt class="py-comment">###</tt> </tt>
+<a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">right</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt>         <tt class="py-comment"># Pacman starts the</tt> </tt>
+<a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">up</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt>            <tt class="py-comment"># game not moving</tt> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">down</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt>          <tt class="py-comment">###</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">                 </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">currDir</tt> <tt class="py-op">=</tt> <tt class="py-string">'left'</tt> </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line">                 </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line">                 </tt>
+<a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">inGame</tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt>         <tt class="py-comment"># Pacman is alive at this point</tt> </tt>
+</div><a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line"> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line">                 </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line"> </tt>
+<a name="Pacman.bindKeys"></a><div id="Pacman.bindKeys-def"><a name="L85"></a><tt class="py-lineno"> 85</tt> <a class="py-toggle" href="#" id="Pacman.bindKeys-toggle" onclick="return toggle('Pacman.bindKeys');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.gameplay.Pacman.Pacman-class.html#bindKeys">bindKeys</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Pacman.bindKeys-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Pacman.bindKeys-expanded"><a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line"><tt class="py-docstring">                Bind Keys.</tt> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line"><tt class="py-docstring">                Takes care of binding keyboard keys to the movement method.</tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">                 </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">gameCanvas</tt><tt class="py-op">.</tt><tt class="py-name">bind_all</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Left&gt;"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-11" class="py-name" targets="Method org.gameplay.Pacman.Pacman.movement()=org.gameplay.Pacman.Pacman-class.html#movement"><a title="org.gameplay.Pacman.Pacman.movement" class="py-name" href="#" onclick="return doclink('link-11', 'movement', 'link-11');">movement</a></tt><tt class="py-op">)</tt>    <tt class="py-comment">###</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">gameCanvas</tt><tt class="py-op">.</tt><tt class="py-name">bind_all</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Right&gt;"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-12" class="py-name"><a title="org.gameplay.Pacman.Pacman.movement" class="py-name" href="#" onclick="return doclink('link-12', 'movement', 'link-11');">movement</a></tt><tt class="py-op">)</tt>   <tt class="py-comment"># Key bindings</tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">gameCanvas</tt><tt class="py-op">.</tt><tt class="py-name">bind_all</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Up&gt;"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="org.gameplay.Pacman.Pacman.movement" class="py-name" href="#" onclick="return doclink('link-13', 'movement', 'link-11');">movement</a></tt><tt class="py-op">)</tt>      <tt class="py-comment">#</tt> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">gameCanvas</tt><tt class="py-op">.</tt><tt class="py-name">bind_all</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Down&gt;"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-14" class="py-name"><a title="org.gameplay.Pacman.Pacman.movement" class="py-name" href="#" onclick="return doclink('link-14', 'movement', 'link-11');">movement</a></tt><tt class="py-op">)</tt>    <tt class="py-comment">###</tt> </tt>
+</div><a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">         </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">         </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line"><tt class="py-comment">## Next move (from keypress)</tt> </tt>
+<a name="Pacman.movement"></a><div id="Pacman.movement-def"><a name="L99"></a><tt class="py-lineno"> 99</tt> <a class="py-toggle" href="#" id="Pacman.movement-toggle" onclick="return toggle('Pacman.movement');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.gameplay.Pacman.Pacman-class.html#movement">movement</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">e</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Pacman.movement-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Pacman.movement-expanded"><a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line"><tt class="py-docstring">                Movement</tt> </tt>
+<a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line"><tt class="py-docstring">                Sets pacman's desired direction to the key pressed direction</tt> </tt>
+<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line"><tt class="py-docstring">                @param e: Input from keyboard</tt> </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line">                 </tt>
+<a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line">                <tt class="py-name">key</tt> <tt class="py-op">=</tt> <tt class="py-name">e</tt><tt class="py-op">.</tt><tt class="py-name">keysym</tt>                   <tt class="py-comment"># Obtained from key in</tt> </tt>
+<a name="L108"></a><tt class="py-lineno">108</tt>  <tt class="py-line"> </tt>
+<a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line">                <tt class="py-comment">## Direction changes</tt> </tt>
+<a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">key</tt> <tt class="py-op">==</tt> <tt class="py-string">"Left"</tt><tt class="py-op">:</tt> </tt>
+<a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line">                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">desiredDir</tt> <tt class="py-op">=</tt> <tt class="py-string">"left"</tt> </tt>
+<a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line">                <tt class="py-keyword">elif</tt> <tt class="py-name">key</tt> <tt class="py-op">==</tt> <tt class="py-string">"Right"</tt><tt class="py-op">:</tt> </tt>
+<a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">desiredDir</tt> <tt class="py-op">=</tt> <tt class="py-string">"right"</tt> </tt>
+<a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line">                <tt class="py-keyword">elif</tt> <tt class="py-name">key</tt> <tt class="py-op">==</tt> <tt class="py-string">"Up"</tt><tt class="py-op">:</tt> </tt>
+<a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line">                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">desiredDir</tt> <tt class="py-op">=</tt> <tt class="py-string">"up"</tt> </tt>
+<a name="L116"></a><tt class="py-lineno">116</tt>  <tt class="py-line">                <tt class="py-keyword">elif</tt> <tt class="py-name">key</tt> <tt class="py-op">==</tt> <tt class="py-string">"Down"</tt><tt class="py-op">:</tt> </tt>
+<a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line">                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">desiredDir</tt> <tt class="py-op">=</tt> <tt class="py-string">"down"</tt> </tt>
+</div><a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line"> </tt>
+<a name="Pacman.process"></a><div id="Pacman.process-def"><a name="L119"></a><tt class="py-lineno">119</tt> <a class="py-toggle" href="#" id="Pacman.process-toggle" onclick="return toggle('Pacman.process');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.gameplay.Pacman.Pacman-class.html#process">process</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Pacman.process-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Pacman.process-expanded"><a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line"><tt class="py-docstring">                Process.</tt> </tt>
+<a name="L122"></a><tt class="py-lineno">122</tt>  <tt class="py-line"><tt class="py-docstring">                This method takes care of all the processing for the pacman for the current iteration.</tt> </tt>
+<a name="L123"></a><tt class="py-lineno">123</tt>  <tt class="py-line"><tt class="py-docstring">                It takes care of determining the next step based on the current state and desired direciont as well</tt> </tt>
+<a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line"><tt class="py-docstring">                as wall avoidance during navigation.</tt> </tt>
+<a name="L125"></a><tt class="py-lineno">125</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line">                 </tt>
+<a name="L128"></a><tt class="py-lineno">128</tt>  <tt class="py-line">                <tt class="py-comment"># If time left in energizeCycles, continue to decrement</tt> </tt>
+<a name="L129"></a><tt class="py-lineno">129</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">energizeCycles</tt> <tt class="py-op">&gt;</tt> <tt class="py-number">0</tt><tt class="py-op">:</tt> </tt>
+<a name="L130"></a><tt class="py-lineno">130</tt>  <tt class="py-line">                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">energizeCycles</tt> <tt class="py-op">-=</tt> <tt class="py-number">1</tt> </tt>
+<a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line">                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">state</tt> <tt class="py-op">=</tt> <tt id="link-15" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-15', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-16" class="py-name"><a title="org.display.DrawingGenerics.PACMAN_STATE" class="py-name" href="#" onclick="return doclink('link-16', 'PACMAN_STATE', 'link-5');">PACMAN_STATE</a></tt><tt class="py-op">[</tt><tt class="py-string">'Energized'</tt><tt class="py-op">]</tt> </tt>
+<a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line">                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">speed</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">specs</tt><tt class="py-op">[</tt><tt class="py-string">'speed_fright'</tt><tt class="py-op">]</tt> </tt>
+<a name="L133"></a><tt class="py-lineno">133</tt>  <tt class="py-line">                <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line">                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">state</tt> <tt class="py-op">=</tt> <tt id="link-17" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-17', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-18" class="py-name"><a title="org.display.DrawingGenerics.PACMAN_STATE" class="py-name" href="#" onclick="return doclink('link-18', 'PACMAN_STATE', 'link-5');">PACMAN_STATE</a></tt><tt class="py-op">[</tt><tt class="py-string">'Normal'</tt><tt class="py-op">]</tt> </tt>
+<a name="L135"></a><tt class="py-lineno">135</tt>  <tt class="py-line">                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">speed</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">specs</tt><tt class="py-op">[</tt><tt class="py-string">'speed'</tt><tt class="py-op">]</tt> </tt>
+<a name="L136"></a><tt class="py-lineno">136</tt>  <tt class="py-line">                 </tt>
+<a name="L137"></a><tt class="py-lineno">137</tt>  <tt class="py-line">                <tt class="py-comment"># Main processing</tt> </tt>
+<a name="L138"></a><tt class="py-lineno">138</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">halt</tt> <tt class="py-op">&gt;</tt> <tt class="py-number">0</tt><tt class="py-op">:</tt> </tt>
+<a name="L139"></a><tt class="py-lineno">139</tt>  <tt class="py-line">                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">halt</tt> <tt class="py-op">-=</tt> <tt class="py-number">1</tt> </tt>
+<a name="L140"></a><tt class="py-lineno">140</tt>  <tt class="py-line">                <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L141"></a><tt class="py-lineno">141</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-19" class="py-name" targets="Method org.gameplay.Sprite.Sprite.movingThroughTunnel()=org.gameplay.Sprite.Sprite-class.html#movingThroughTunnel"><a title="org.gameplay.Sprite.Sprite.movingThroughTunnel" class="py-name" href="#" onclick="return doclink('link-19', 'movingThroughTunnel', 'link-19');">movingThroughTunnel</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L142"></a><tt class="py-lineno">142</tt>  <tt class="py-line">                                <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-20" class="py-name" targets="Method org.gameplay.Sprite.Sprite.inCentreOfTile()=org.gameplay.Sprite.Sprite-class.html#inCentreOfTile"><a title="org.gameplay.Sprite.Sprite.inCentreOfTile" class="py-name" href="#" onclick="return doclink('link-20', 'inCentreOfTile', 'link-20');">inCentreOfTile</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L143"></a><tt class="py-lineno">143</tt>  <tt class="py-line">                                        <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-21" class="py-name" targets="Method org.gameplay.Sprite.Sprite.isPastCentreOfTile()=org.gameplay.Sprite.Sprite-class.html#isPastCentreOfTile"><a title="org.gameplay.Sprite.Sprite.isPastCentreOfTile" class="py-name" href="#" onclick="return doclink('link-21', 'isPastCentreOfTile', 'link-21');">isPastCentreOfTile</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L144"></a><tt class="py-lineno">144</tt>  <tt class="py-line">                                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-22" class="py-name" targets="Method org.gameplay.Pacman.Pacman.checkReversalOfDirection()=org.gameplay.Pacman.Pacman-class.html#checkReversalOfDirection"><a title="org.gameplay.Pacman.Pacman.checkReversalOfDirection" class="py-name" href="#" onclick="return doclink('link-22', 'checkReversalOfDirection', 'link-22');">checkReversalOfDirection</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L145"></a><tt class="py-lineno">145</tt>  <tt class="py-line">                                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-23" class="py-name" targets="Method org.gameplay.Sprite.Sprite.doMove()=org.gameplay.Sprite.Sprite-class.html#doMove"><a title="org.gameplay.Sprite.Sprite.doMove" class="py-name" href="#" onclick="return doclink('link-23', 'doMove', 'link-23');">doMove</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L146"></a><tt class="py-lineno">146</tt>  <tt class="py-line">                                        <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L147"></a><tt class="py-lineno">147</tt>  <tt class="py-line">                                                <tt class="py-name">inTileX</tt><tt class="py-op">,</tt> <tt class="py-name">inTileY</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-24" class="py-name" targets="Method org.gameplay.PointItem.PointItem.inTile()=org.gameplay.PointItem.PointItem-class.html#inTile,Method org.gameplay.Sprite.Sprite.inTile()=org.gameplay.Sprite.Sprite-class.html#inTile"><a title="org.gameplay.PointItem.PointItem.inTile
+org.gameplay.Sprite.Sprite.inTile" class="py-name" href="#" onclick="return doclink('link-24', 'inTile', 'link-24');">inTile</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L148"></a><tt class="py-lineno">148</tt>  <tt class="py-line">                                                <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-25" class="py-name" targets="Method org.gameplay.Sprite.Sprite.wallAhead()=org.gameplay.Sprite.Sprite-class.html#wallAhead"><a title="org.gameplay.Sprite.Sprite.wallAhead" class="py-name" href="#" onclick="return doclink('link-25', 'wallAhead', 'link-25');">wallAhead</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L149"></a><tt class="py-lineno">149</tt>  <tt class="py-line">                                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-26" class="py-name" targets="Method org.gameplay.Sprite.Sprite.correctPosition()=org.gameplay.Sprite.Sprite-class.html#correctPosition"><a title="org.gameplay.Sprite.Sprite.correctPosition" class="py-name" href="#" onclick="return doclink('link-26', 'correctPosition', 'link-26');">correctPosition</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L150"></a><tt class="py-lineno">150</tt>  <tt class="py-line">                                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-27" class="py-name" targets="Method org.gameplay.Sprite.Sprite.stop()=org.gameplay.Sprite.Sprite-class.html#stop"><a title="org.gameplay.Sprite.Sprite.stop" class="py-name" href="#" onclick="return doclink('link-27', 'stop', 'link-27');">stop</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L151"></a><tt class="py-lineno">151</tt>  <tt class="py-line">                                                <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L152"></a><tt class="py-lineno">152</tt>  <tt class="py-line">                                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-28" class="py-name"><a title="org.gameplay.Pacman.Pacman.checkReversalOfDirection" class="py-name" href="#" onclick="return doclink('link-28', 'checkReversalOfDirection', 'link-22');">checkReversalOfDirection</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L153"></a><tt class="py-lineno">153</tt>  <tt class="py-line">                                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-29" class="py-name"><a title="org.gameplay.Sprite.Sprite.doMove" class="py-name" href="#" onclick="return doclink('link-29', 'doMove', 'link-23');">doMove</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L154"></a><tt class="py-lineno">154</tt>  <tt class="py-line">                                <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L155"></a><tt class="py-lineno">155</tt>  <tt class="py-line">                                        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-30" class="py-name" targets="Method org.gameplay.Pacman.Pacman.directionChanged()=org.gameplay.Pacman.Pacman-class.html#directionChanged"><a title="org.gameplay.Pacman.Pacman.directionChanged" class="py-name" href="#" onclick="return doclink('link-30', 'directionChanged', 'link-30');">directionChanged</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L156"></a><tt class="py-lineno">156</tt>  <tt class="py-line">                                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-31" class="py-name"><a title="org.gameplay.Sprite.Sprite.doMove" class="py-name" href="#" onclick="return doclink('link-31', 'doMove', 'link-23');">doMove</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L157"></a><tt class="py-lineno">157</tt>  <tt class="py-line">                                        <tt class="py-keyword">elif</tt> <tt class="py-keyword">not</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-32" class="py-name"><a title="org.gameplay.Sprite.Sprite.wallAhead" class="py-name" href="#" onclick="return doclink('link-32', 'wallAhead', 'link-25');">wallAhead</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L158"></a><tt class="py-lineno">158</tt>  <tt class="py-line">                                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-33" class="py-name"><a title="org.gameplay.Sprite.Sprite.doMove" class="py-name" href="#" onclick="return doclink('link-33', 'doMove', 'link-23');">doMove</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L159"></a><tt class="py-lineno">159</tt>  <tt class="py-line">                                        <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L160"></a><tt class="py-lineno">160</tt>  <tt class="py-line">                                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-34" class="py-name"><a title="org.gameplay.Sprite.Sprite.stop" class="py-name" href="#" onclick="return doclink('link-34', 'stop', 'link-27');">stop</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L161"></a><tt class="py-lineno">161</tt>  <tt class="py-line">                                 </tt>
+<a name="Pacman.energized"></a><div id="Pacman.energized-def"><a name="L162"></a><tt class="py-lineno">162</tt> <a class="py-toggle" href="#" id="Pacman.energized-toggle" onclick="return toggle('Pacman.energized');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.gameplay.Pacman.Pacman-class.html#energized">energized</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">energizeCycles</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Pacman.energized-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Pacman.energized-expanded"><a name="L163"></a><tt class="py-lineno">163</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L164"></a><tt class="py-lineno">164</tt>  <tt class="py-line"><tt class="py-docstring">                Energized.</tt> </tt>
+<a name="L165"></a><tt class="py-lineno">165</tt>  <tt class="py-line"><tt class="py-docstring">                This method sets the pacman to be in energized mode while the ghosts are in fright mode.</tt> </tt>
+<a name="L166"></a><tt class="py-lineno">166</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L167"></a><tt class="py-lineno">167</tt>  <tt class="py-line"><tt class="py-docstring">                @param energizeCycles: The number of iterations that pacman will remain in this state.</tt> </tt>
+<a name="L168"></a><tt class="py-lineno">168</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L169"></a><tt class="py-lineno">169</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">halt</tt> <tt class="py-op">=</tt> <tt class="py-number">3</tt> </tt>
+<a name="L170"></a><tt class="py-lineno">170</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">energizeCycles</tt> <tt class="py-op">=</tt> <tt class="py-name">energizeCycles</tt> </tt>
+<a name="L171"></a><tt class="py-lineno">171</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">state</tt> <tt class="py-op">=</tt> <tt id="link-35" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-35', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-36" class="py-name"><a title="org.display.DrawingGenerics.PACMAN_STATE" class="py-name" href="#" onclick="return doclink('link-36', 'PACMAN_STATE', 'link-5');">PACMAN_STATE</a></tt><tt class="py-op">[</tt><tt class="py-string">'Energized'</tt><tt class="py-op">]</tt> </tt>
+</div><a name="L172"></a><tt class="py-lineno">172</tt>  <tt class="py-line">                                 </tt>
+<a name="Pacman.setHaltIterations"></a><div id="Pacman.setHaltIterations-def"><a name="L173"></a><tt class="py-lineno">173</tt> <a class="py-toggle" href="#" id="Pacman.setHaltIterations-toggle" onclick="return toggle('Pacman.setHaltIterations');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.gameplay.Pacman.Pacman-class.html#setHaltIterations">setHaltIterations</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">num</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Pacman.setHaltIterations-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Pacman.setHaltIterations-expanded"><a name="L174"></a><tt class="py-lineno">174</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L175"></a><tt class="py-lineno">175</tt>  <tt class="py-line"><tt class="py-docstring">                Set Halt Iterations.</tt> </tt>
+<a name="L176"></a><tt class="py-lineno">176</tt>  <tt class="py-line"><tt class="py-docstring">                This method sets the number of iterations for pacman to halt.</tt> </tt>
+<a name="L177"></a><tt class="py-lineno">177</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L178"></a><tt class="py-lineno">178</tt>  <tt class="py-line"><tt class="py-docstring">                @param num: The number of iterations that pacman will halt.</tt> </tt>
+<a name="L179"></a><tt class="py-lineno">179</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L180"></a><tt class="py-lineno">180</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">halt</tt> <tt class="py-op">=</tt> <tt class="py-name">num</tt> </tt>
+</div><a name="L181"></a><tt class="py-lineno">181</tt>  <tt class="py-line">                 </tt>
+<a name="Pacman.checkReversalOfDirection"></a><div id="Pacman.checkReversalOfDirection-def"><a name="L182"></a><tt class="py-lineno">182</tt> <a class="py-toggle" href="#" id="Pacman.checkReversalOfDirection-toggle" onclick="return toggle('Pacman.checkReversalOfDirection');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.gameplay.Pacman.Pacman-class.html#checkReversalOfDirection">checkReversalOfDirection</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Pacman.checkReversalOfDirection-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Pacman.checkReversalOfDirection-expanded"><a name="L183"></a><tt class="py-lineno">183</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L184"></a><tt class="py-lineno">184</tt>  <tt class="py-line"><tt class="py-docstring">                Check Reversal Of Direction.</tt> </tt>
+<a name="L185"></a><tt class="py-lineno">185</tt>  <tt class="py-line"><tt class="py-docstring">                Check to see if a reversal of direction is requested.</tt> </tt>
+<a name="L186"></a><tt class="py-lineno">186</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L187"></a><tt class="py-lineno">187</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L188"></a><tt class="py-lineno">188</tt>  <tt class="py-line">                 </tt>
+<a name="L189"></a><tt class="py-lineno">189</tt>  <tt class="py-line">                <tt class="py-name">desiredDir</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">desiredDir</tt> </tt>
+<a name="L190"></a><tt class="py-lineno">190</tt>  <tt class="py-line">                 </tt>
+<a name="L191"></a><tt class="py-lineno">191</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">left</tt><tt class="py-op">:</tt> </tt>
+<a name="L192"></a><tt class="py-lineno">192</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-name">desiredDir</tt> <tt class="py-op">==</tt> <tt class="py-string">"right"</tt><tt class="py-op">:</tt> </tt>
+<a name="L193"></a><tt class="py-lineno">193</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">left</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L194"></a><tt class="py-lineno">194</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">right</tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt> </tt>
+<a name="L195"></a><tt class="py-lineno">195</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">up</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L196"></a><tt class="py-lineno">196</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">down</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L197"></a><tt class="py-lineno">197</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">currDir</tt> <tt class="py-op">=</tt> <tt class="py-name">desiredDir</tt> </tt>
+<a name="L198"></a><tt class="py-lineno">198</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">desiredDir</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
+<a name="L199"></a><tt class="py-lineno">199</tt>  <tt class="py-line">                <tt class="py-keyword">elif</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">right</tt><tt class="py-op">:</tt> </tt>
+<a name="L200"></a><tt class="py-lineno">200</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-name">desiredDir</tt> <tt class="py-op">==</tt> <tt class="py-string">"left"</tt><tt class="py-op">:</tt> </tt>
+<a name="L201"></a><tt class="py-lineno">201</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">left</tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt> </tt>
+<a name="L202"></a><tt class="py-lineno">202</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">right</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L203"></a><tt class="py-lineno">203</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">up</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L204"></a><tt class="py-lineno">204</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">down</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L205"></a><tt class="py-lineno">205</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">currDir</tt> <tt class="py-op">=</tt> <tt class="py-name">desiredDir</tt> </tt>
+<a name="L206"></a><tt class="py-lineno">206</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">desiredDir</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
+<a name="L207"></a><tt class="py-lineno">207</tt>  <tt class="py-line">                <tt class="py-keyword">elif</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">up</tt><tt class="py-op">:</tt> </tt>
+<a name="L208"></a><tt class="py-lineno">208</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-name">desiredDir</tt> <tt class="py-op">==</tt> <tt class="py-string">"down"</tt><tt class="py-op">:</tt> </tt>
+<a name="L209"></a><tt class="py-lineno">209</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">left</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L210"></a><tt class="py-lineno">210</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">right</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L211"></a><tt class="py-lineno">211</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">up</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L212"></a><tt class="py-lineno">212</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">down</tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt> </tt>
+<a name="L213"></a><tt class="py-lineno">213</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">currDir</tt> <tt class="py-op">=</tt> <tt class="py-name">desiredDir</tt> </tt>
+<a name="L214"></a><tt class="py-lineno">214</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">desiredDir</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
+<a name="L215"></a><tt class="py-lineno">215</tt>  <tt class="py-line">                <tt class="py-keyword">elif</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">down</tt><tt class="py-op">:</tt> </tt>
+<a name="L216"></a><tt class="py-lineno">216</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-name">desiredDir</tt> <tt class="py-op">==</tt> <tt class="py-string">"up"</tt><tt class="py-op">:</tt> </tt>
+<a name="L217"></a><tt class="py-lineno">217</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">left</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L218"></a><tt class="py-lineno">218</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">right</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L219"></a><tt class="py-lineno">219</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">up</tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt> </tt>
+<a name="L220"></a><tt class="py-lineno">220</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">down</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L221"></a><tt class="py-lineno">221</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">currDir</tt> <tt class="py-op">=</tt> <tt class="py-name">desiredDir</tt> </tt>
+<a name="L222"></a><tt class="py-lineno">222</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">desiredDir</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
+</div><a name="L223"></a><tt class="py-lineno">223</tt>  <tt class="py-line">         </tt>
+<a name="Pacman.directionChanged"></a><div id="Pacman.directionChanged-def"><a name="L224"></a><tt class="py-lineno">224</tt> <a class="py-toggle" href="#" id="Pacman.directionChanged-toggle" onclick="return toggle('Pacman.directionChanged');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.gameplay.Pacman.Pacman-class.html#directionChanged">directionChanged</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Pacman.directionChanged-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Pacman.directionChanged-expanded"><a name="L225"></a><tt class="py-lineno">225</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L226"></a><tt class="py-lineno">226</tt>  <tt class="py-line"><tt class="py-docstring">                Direction Changed.</tt> </tt>
+<a name="L227"></a><tt class="py-lineno">227</tt>  <tt class="py-line"><tt class="py-docstring">                Determines if pacman can move in a certain direction.</tt> </tt>
+<a name="L228"></a><tt class="py-lineno">228</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L229"></a><tt class="py-lineno">229</tt>  <tt class="py-line"><tt class="py-docstring">                @return: True - if pacman did change directions. False - if pacman did not.</tt> </tt>
+<a name="L230"></a><tt class="py-lineno">230</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L231"></a><tt class="py-lineno">231</tt>  <tt class="py-line">                 </tt>
+<a name="L232"></a><tt class="py-lineno">232</tt>  <tt class="py-line">                <tt class="py-name">desiredDir</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">desiredDir</tt>  <tt class="py-comment"># Direction obtained from keypress</tt> </tt>
+<a name="L233"></a><tt class="py-lineno">233</tt>  <tt class="py-line">                 </tt>
+<a name="L234"></a><tt class="py-lineno">234</tt>  <tt class="py-line">                <tt class="py-name">changeAllowed</tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt>          <tt class="py-comment"># Init allowable change in direction </tt> </tt>
+<a name="L235"></a><tt class="py-lineno">235</tt>  <tt class="py-line">                 </tt>
+<a name="L236"></a><tt class="py-lineno">236</tt>  <tt class="py-line">                <tt class="py-name">mapWalls</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">gameManager</tt><tt class="py-op">.</tt><tt id="link-37" class="py-name" targets="Method org.gameplay.Gameplay.GamePlay.getWalls()=org.gameplay.Gameplay.GamePlay-class.html#getWalls"><a title="org.gameplay.Gameplay.GamePlay.getWalls" class="py-name" href="#" onclick="return doclink('link-37', 'getWalls', 'link-37');">getWalls</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L237"></a><tt class="py-lineno">237</tt>  <tt class="py-line">                 </tt>
+<a name="L238"></a><tt class="py-lineno">238</tt>  <tt class="py-line">                <tt class="py-comment">## Attempt to turn left</tt> </tt>
+<a name="L239"></a><tt class="py-lineno">239</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">desiredDir</tt> <tt class="py-op">==</tt> <tt class="py-string">"left"</tt><tt class="py-op">:</tt> </tt>
+<a name="L240"></a><tt class="py-lineno">240</tt>  <tt class="py-line">                         </tt>
+<a name="L241"></a><tt class="py-lineno">241</tt>  <tt class="py-line">                        <tt class="py-keyword">for</tt> <tt class="py-name">wall</tt> <tt class="py-keyword">in</tt> <tt class="py-name">mapWalls</tt><tt class="py-op">:</tt> </tt>
+<a name="L242"></a><tt class="py-lineno">242</tt>  <tt class="py-line">                                <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">changeAllowed</tt><tt class="py-op">:</tt> </tt>
+<a name="L243"></a><tt class="py-lineno">243</tt>  <tt class="py-line">                                        <tt class="py-keyword">break</tt> </tt>
+<a name="L244"></a><tt class="py-lineno">244</tt>  <tt class="py-line">                                <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-38" class="py-name" targets="Method org.gameplay.GameItem.GameItem.findOverlappingWith()=org.gameplay.GameItem.GameItem-class.html#findOverlappingWith"><a title="org.gameplay.GameItem.GameItem.findOverlappingWith" class="py-name" href="#" onclick="return doclink('link-38', 'findOverlappingWith', 'link-38');">findOverlappingWith</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">xCenter</tt> <tt class="py-op">-</tt> <tt id="link-39" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-39', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-40" class="py-name" targets="Variable org.display.DrawingGenerics.TILE_SIZE=org.display.DrawingGenerics-module.html#TILE_SIZE"><a title="org.display.DrawingGenerics.TILE_SIZE" class="py-name" href="#" onclick="return doclink('link-40', 'TILE_SIZE', 'link-40');">TILE_SIZE</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L245"></a><tt class="py-lineno">245</tt>  <tt class="py-line">                                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">yTop</tt><tt class="py-op">,</tt> </tt>
+<a name="L246"></a><tt class="py-lineno">246</tt>  <tt class="py-line">                                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">xCenter</tt> <tt class="py-op">-</tt> <tt id="link-41" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-41', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-42" class="py-name"><a title="org.display.DrawingGenerics.TILE_SIZE" class="py-name" href="#" onclick="return doclink('link-42', 'TILE_SIZE', 'link-40');">TILE_SIZE</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L247"></a><tt class="py-lineno">247</tt>  <tt class="py-line">                                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">yBottom</tt><tt class="py-op">,</tt> </tt>
+<a name="L248"></a><tt class="py-lineno">248</tt>  <tt class="py-line">                                                        <tt class="py-name">wall</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L249"></a><tt class="py-lineno">249</tt>  <tt class="py-line">                                        <tt class="py-name">changeAllowed</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L250"></a><tt class="py-lineno">250</tt>  <tt class="py-line">                                        <tt class="py-keyword">break</tt> </tt>
+<a name="L251"></a><tt class="py-lineno">251</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-name">changeAllowed</tt><tt class="py-op">:</tt> </tt>
+<a name="L252"></a><tt class="py-lineno">252</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">left</tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt> </tt>
+<a name="L253"></a><tt class="py-lineno">253</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">right</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L254"></a><tt class="py-lineno">254</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">up</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L255"></a><tt class="py-lineno">255</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">down</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L256"></a><tt class="py-lineno">256</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">currDir</tt> <tt class="py-op">=</tt> <tt class="py-name">desiredDir</tt> </tt>
+<a name="L257"></a><tt class="py-lineno">257</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">desiredDir</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
+<a name="L258"></a><tt class="py-lineno">258</tt>  <tt class="py-line">                                <tt class="py-keyword">return</tt> <tt class="py-name">True</tt> </tt>
+<a name="L259"></a><tt class="py-lineno">259</tt>  <tt class="py-line">                        <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L260"></a><tt class="py-lineno">260</tt>  <tt class="py-line">                                <tt class="py-keyword">return</tt> <tt class="py-name">False</tt> </tt>
+<a name="L261"></a><tt class="py-lineno">261</tt>  <tt class="py-line"> </tt>
+<a name="L262"></a><tt class="py-lineno">262</tt>  <tt class="py-line">                <tt class="py-comment">## Attempt to turn right</tt> </tt>
+<a name="L263"></a><tt class="py-lineno">263</tt>  <tt class="py-line">                <tt class="py-keyword">elif</tt> <tt class="py-name">desiredDir</tt> <tt class="py-op">==</tt> <tt class="py-string">"right"</tt><tt class="py-op">:</tt> </tt>
+<a name="L264"></a><tt class="py-lineno">264</tt>  <tt class="py-line">                        <tt class="py-keyword">for</tt> <tt class="py-name">wall</tt> <tt class="py-keyword">in</tt> <tt class="py-name">mapWalls</tt><tt class="py-op">:</tt> </tt>
+<a name="L265"></a><tt class="py-lineno">265</tt>  <tt class="py-line">                                <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">changeAllowed</tt><tt class="py-op">:</tt> </tt>
+<a name="L266"></a><tt class="py-lineno">266</tt>  <tt class="py-line">                                        <tt class="py-keyword">break</tt> </tt>
+<a name="L267"></a><tt class="py-lineno">267</tt>  <tt class="py-line">                                <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-43" class="py-name"><a title="org.gameplay.GameItem.GameItem.findOverlappingWith" class="py-name" href="#" onclick="return doclink('link-43', 'findOverlappingWith', 'link-38');">findOverlappingWith</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">xCenter</tt> <tt class="py-op">+</tt> <tt id="link-44" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-44', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-45" class="py-name"><a title="org.display.DrawingGenerics.TILE_SIZE" class="py-name" href="#" onclick="return doclink('link-45', 'TILE_SIZE', 'link-40');">TILE_SIZE</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L268"></a><tt class="py-lineno">268</tt>  <tt class="py-line">                                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">yTop</tt><tt class="py-op">,</tt> </tt>
+<a name="L269"></a><tt class="py-lineno">269</tt>  <tt class="py-line">                                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">xCenter</tt> <tt class="py-op">+</tt> <tt id="link-46" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-46', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-47" class="py-name"><a title="org.display.DrawingGenerics.TILE_SIZE" class="py-name" href="#" onclick="return doclink('link-47', 'TILE_SIZE', 'link-40');">TILE_SIZE</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L270"></a><tt class="py-lineno">270</tt>  <tt class="py-line">                                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">yBottom</tt><tt class="py-op">,</tt> </tt>
+<a name="L271"></a><tt class="py-lineno">271</tt>  <tt class="py-line">                                                        <tt class="py-name">wall</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L272"></a><tt class="py-lineno">272</tt>  <tt class="py-line">                                        <tt class="py-name">changeAllowed</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L273"></a><tt class="py-lineno">273</tt>  <tt class="py-line">                                        <tt class="py-keyword">break</tt> </tt>
+<a name="L274"></a><tt class="py-lineno">274</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-name">changeAllowed</tt><tt class="py-op">:</tt> </tt>
+<a name="L275"></a><tt class="py-lineno">275</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">left</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L276"></a><tt class="py-lineno">276</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">right</tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt> </tt>
+<a name="L277"></a><tt class="py-lineno">277</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">up</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L278"></a><tt class="py-lineno">278</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">down</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L279"></a><tt class="py-lineno">279</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">currDir</tt> <tt class="py-op">=</tt> <tt class="py-name">desiredDir</tt> </tt>
+<a name="L280"></a><tt class="py-lineno">280</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">desiredDir</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
+<a name="L281"></a><tt class="py-lineno">281</tt>  <tt class="py-line">                                <tt class="py-keyword">return</tt> <tt class="py-name">True</tt> </tt>
+<a name="L282"></a><tt class="py-lineno">282</tt>  <tt class="py-line">                        <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L283"></a><tt class="py-lineno">283</tt>  <tt class="py-line">                                <tt class="py-keyword">return</tt> <tt class="py-name">False</tt> </tt>
+<a name="L284"></a><tt class="py-lineno">284</tt>  <tt class="py-line">                         </tt>
+<a name="L285"></a><tt class="py-lineno">285</tt>  <tt class="py-line">                <tt class="py-comment">## Attempt to turn "up"</tt> </tt>
+<a name="L286"></a><tt class="py-lineno">286</tt>  <tt class="py-line">                <tt class="py-keyword">elif</tt> <tt class="py-name">desiredDir</tt> <tt class="py-op">==</tt> <tt class="py-string">"up"</tt><tt class="py-op">:</tt> </tt>
+<a name="L287"></a><tt class="py-lineno">287</tt>  <tt class="py-line">                        <tt class="py-keyword">for</tt> <tt class="py-name">wall</tt> <tt class="py-keyword">in</tt> <tt class="py-name">mapWalls</tt><tt class="py-op">:</tt> </tt>
+<a name="L288"></a><tt class="py-lineno">288</tt>  <tt class="py-line">                                <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">changeAllowed</tt><tt class="py-op">:</tt> </tt>
+<a name="L289"></a><tt class="py-lineno">289</tt>  <tt class="py-line">                                        <tt class="py-keyword">break</tt> </tt>
+<a name="L290"></a><tt class="py-lineno">290</tt>  <tt class="py-line">                                <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-48" class="py-name"><a title="org.gameplay.GameItem.GameItem.findOverlappingWith" class="py-name" href="#" onclick="return doclink('link-48', 'findOverlappingWith', 'link-38');">findOverlappingWith</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">xLeft</tt><tt class="py-op">,</tt> </tt>
+<a name="L291"></a><tt class="py-lineno">291</tt>  <tt class="py-line">                                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">yCenter</tt> <tt class="py-op">-</tt> <tt id="link-49" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-49', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-50" class="py-name"><a title="org.display.DrawingGenerics.TILE_SIZE" class="py-name" href="#" onclick="return doclink('link-50', 'TILE_SIZE', 'link-40');">TILE_SIZE</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L292"></a><tt class="py-lineno">292</tt>  <tt class="py-line">                                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">xRight</tt><tt class="py-op">,</tt> </tt>
+<a name="L293"></a><tt class="py-lineno">293</tt>  <tt class="py-line">                                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">yCenter</tt> <tt class="py-op">-</tt> <tt id="link-51" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-51', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-52" class="py-name"><a title="org.display.DrawingGenerics.TILE_SIZE" class="py-name" href="#" onclick="return doclink('link-52', 'TILE_SIZE', 'link-40');">TILE_SIZE</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L294"></a><tt class="py-lineno">294</tt>  <tt class="py-line">                                                        <tt class="py-name">wall</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L295"></a><tt class="py-lineno">295</tt>  <tt class="py-line">                                        <tt class="py-name">changeAllowed</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L296"></a><tt class="py-lineno">296</tt>  <tt class="py-line">                                        <tt class="py-keyword">break</tt> </tt>
+<a name="L297"></a><tt class="py-lineno">297</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-name">changeAllowed</tt><tt class="py-op">:</tt> </tt>
+<a name="L298"></a><tt class="py-lineno">298</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">left</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L299"></a><tt class="py-lineno">299</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">right</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L300"></a><tt class="py-lineno">300</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">up</tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt> </tt>
+<a name="L301"></a><tt class="py-lineno">301</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">down</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L302"></a><tt class="py-lineno">302</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">currDir</tt> <tt class="py-op">=</tt> <tt class="py-name">desiredDir</tt> </tt>
+<a name="L303"></a><tt class="py-lineno">303</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">desiredDir</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
+<a name="L304"></a><tt class="py-lineno">304</tt>  <tt class="py-line">                                <tt class="py-keyword">return</tt> <tt class="py-name">True</tt> </tt>
+<a name="L305"></a><tt class="py-lineno">305</tt>  <tt class="py-line">                        <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L306"></a><tt class="py-lineno">306</tt>  <tt class="py-line">                                <tt class="py-keyword">return</tt> <tt class="py-name">False</tt> </tt>
+<a name="L307"></a><tt class="py-lineno">307</tt>  <tt class="py-line">                                 </tt>
+<a name="L308"></a><tt class="py-lineno">308</tt>  <tt class="py-line">                <tt class="py-comment">## Attempt to turn "down"</tt> </tt>
+<a name="L309"></a><tt class="py-lineno">309</tt>  <tt class="py-line">                <tt class="py-keyword">elif</tt> <tt class="py-name">desiredDir</tt> <tt class="py-op">==</tt> <tt class="py-string">"down"</tt><tt class="py-op">:</tt> </tt>
+<a name="L310"></a><tt class="py-lineno">310</tt>  <tt class="py-line">                        <tt class="py-keyword">for</tt> <tt class="py-name">wall</tt> <tt class="py-keyword">in</tt> <tt class="py-name">mapWalls</tt><tt class="py-op">:</tt> </tt>
+<a name="L311"></a><tt class="py-lineno">311</tt>  <tt class="py-line">                                <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">changeAllowed</tt><tt class="py-op">:</tt> </tt>
+<a name="L312"></a><tt class="py-lineno">312</tt>  <tt class="py-line">                                        <tt class="py-keyword">break</tt> </tt>
+<a name="L313"></a><tt class="py-lineno">313</tt>  <tt class="py-line">                                <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-53" class="py-name"><a title="org.gameplay.GameItem.GameItem.findOverlappingWith" class="py-name" href="#" onclick="return doclink('link-53', 'findOverlappingWith', 'link-38');">findOverlappingWith</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">xLeft</tt><tt class="py-op">,</tt> </tt>
+<a name="L314"></a><tt class="py-lineno">314</tt>  <tt class="py-line">                                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">yCenter</tt> <tt class="py-op">+</tt> <tt id="link-54" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-54', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-55" class="py-name"><a title="org.display.DrawingGenerics.TILE_SIZE" class="py-name" href="#" onclick="return doclink('link-55', 'TILE_SIZE', 'link-40');">TILE_SIZE</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L315"></a><tt class="py-lineno">315</tt>  <tt class="py-line">                                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">xRight</tt><tt class="py-op">,</tt> </tt>
+<a name="L316"></a><tt class="py-lineno">316</tt>  <tt class="py-line">                                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">yCenter</tt> <tt class="py-op">+</tt> <tt id="link-56" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-56', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-57" class="py-name"><a title="org.display.DrawingGenerics.TILE_SIZE" class="py-name" href="#" onclick="return doclink('link-57', 'TILE_SIZE', 'link-40');">TILE_SIZE</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L317"></a><tt class="py-lineno">317</tt>  <tt class="py-line">                                                        <tt class="py-name">wall</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L318"></a><tt class="py-lineno">318</tt>  <tt class="py-line">                                        <tt class="py-name">changeAllowed</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L319"></a><tt class="py-lineno">319</tt>  <tt class="py-line">                                        <tt class="py-keyword">break</tt> </tt>
+<a name="L320"></a><tt class="py-lineno">320</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-name">changeAllowed</tt><tt class="py-op">:</tt> </tt>
+<a name="L321"></a><tt class="py-lineno">321</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">left</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L322"></a><tt class="py-lineno">322</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">right</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L323"></a><tt class="py-lineno">323</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">up</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L324"></a><tt class="py-lineno">324</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">down</tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt> </tt>
+<a name="L325"></a><tt class="py-lineno">325</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">currDir</tt> <tt class="py-op">=</tt> <tt class="py-name">desiredDir</tt> </tt>
+<a name="L326"></a><tt class="py-lineno">326</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">desiredDir</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
+<a name="L327"></a><tt class="py-lineno">327</tt>  <tt class="py-line">                                <tt class="py-keyword">return</tt> <tt class="py-name">True</tt> </tt>
+<a name="L328"></a><tt class="py-lineno">328</tt>  <tt class="py-line">                        <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L329"></a><tt class="py-lineno">329</tt>  <tt class="py-line">                                <tt class="py-keyword">return</tt> <tt class="py-name">False</tt> </tt>
+<a name="L330"></a><tt class="py-lineno">330</tt>  <tt class="py-line">                <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L331"></a><tt class="py-lineno">331</tt>  <tt class="py-line">                        <tt class="py-keyword">return</tt> <tt class="py-name">False</tt> </tt>
+</div><a name="L332"></a><tt class="py-lineno">332</tt>  <tt class="py-line">                         </tt>
+<a name="Pacman.restart"></a><div id="Pacman.restart-def"><a name="L333"></a><tt class="py-lineno">333</tt> <a class="py-toggle" href="#" id="Pacman.restart-toggle" onclick="return toggle('Pacman.restart');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.gameplay.Pacman.Pacman-class.html#restart">restart</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Pacman.restart-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Pacman.restart-expanded"><a name="L334"></a><tt class="py-lineno">334</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L335"></a><tt class="py-lineno">335</tt>  <tt class="py-line"><tt class="py-docstring">                Restart.</tt> </tt>
+<a name="L336"></a><tt class="py-lineno">336</tt>  <tt class="py-line"><tt class="py-docstring">                Reset the pacman to its starting settings.</tt> </tt>
+<a name="L337"></a><tt class="py-lineno">337</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L338"></a><tt class="py-lineno">338</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L339"></a><tt class="py-lineno">339</tt>  <tt class="py-line">                 </tt>
+<a name="L340"></a><tt class="py-lineno">340</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-58" class="py-name"><a title="org.gameplay.Ghost.Ghost.initGame
+org.gameplay.Pacman.Pacman.initGame" class="py-name" href="#" onclick="return doclink('link-58', 'initGame', 'link-10');">initGame</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L341"></a><tt class="py-lineno">341</tt>  <tt class="py-line">                 </tt>
+<a name="L342"></a><tt class="py-lineno">342</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-59" class="py-name" targets="Method org.gameplay.GameItem.GameItem.deleteDrawing()=org.gameplay.GameItem.GameItem-class.html#deleteDrawing"><a title="org.gameplay.GameItem.GameItem.deleteDrawing" class="py-name" href="#" onclick="return doclink('link-59', 'deleteDrawing', 'link-59');">deleteDrawing</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L343"></a><tt class="py-lineno">343</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-60" class="py-name" targets="Method org.gameplay.Sprite.Sprite.move()=org.gameplay.Sprite.Sprite-class.html#move"><a title="org.gameplay.Sprite.Sprite.move" class="py-name" href="#" onclick="return doclink('link-60', 'move', 'link-60');">move</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">xStart</tt> <tt class="py-op">-</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">xCenter</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">yStart</tt> <tt class="py-op">-</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">yCenter</tt><tt class="py-op">)</tt> </tt>
+<a name="L344"></a><tt class="py-lineno">344</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-61" class="py-name"><a title="org.gameplay.GameItem.GameItem.draw
+org.gameplay.Ghost.Ghost.draw
+org.gameplay.Pacman.Pacman.draw
+org.gameplay.PointItem.PointItem.draw
+org.gameplay.Sprite.Sprite.draw
+org.gameplay.Wall.Wall.draw" class="py-name" href="#" onclick="return doclink('link-61', 'draw', 'link-8');">draw</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L345"></a><tt class="py-lineno">345</tt>  <tt class="py-line">                 </tt>
+<a name="L346"></a><tt class="py-lineno">346</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">energizeCycles</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+<a name="L347"></a><tt class="py-lineno">347</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">halt</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+<a name="L348"></a><tt class="py-lineno">348</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">desiredDir</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
+</div><a name="L349"></a><tt class="py-lineno">349</tt>  <tt class="py-line">         </tt>
+<a name="Pacman.currDirection"></a><div id="Pacman.currDirection-def"><a name="L350"></a><tt class="py-lineno">350</tt> <a class="py-toggle" href="#" id="Pacman.currDirection-toggle" onclick="return toggle('Pacman.currDirection');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.gameplay.Pacman.Pacman-class.html#currDirection">currDirection</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Pacman.currDirection-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Pacman.currDirection-expanded"><a name="L351"></a><tt class="py-lineno">351</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L352"></a><tt class="py-lineno">352</tt>  <tt class="py-line"><tt class="py-docstring">                Current Direction.</tt> </tt>
+<a name="L353"></a><tt class="py-lineno">353</tt>  <tt class="py-line"><tt class="py-docstring">                Gets pacman's current direction value.</tt> </tt>
+<a name="L354"></a><tt class="py-lineno">354</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L355"></a><tt class="py-lineno">355</tt>  <tt class="py-line"><tt class="py-docstring">                @return: currDir: The pacman's direction string.</tt> </tt>
+<a name="L356"></a><tt class="py-lineno">356</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L357"></a><tt class="py-lineno">357</tt>  <tt class="py-line">                <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">currDir</tt> </tt>
+</div></div><a name="L358"></a><tt class="py-lineno">358</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="org-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Dec  6 23:58:27 2012
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

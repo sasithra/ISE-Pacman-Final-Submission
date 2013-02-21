@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.5">
+  <zoom_level>8</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>720</x>
+      <y>512</y>
+      <w>120</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>FrameMaster
+--
++void liftFrame()
++void lowerFrame()
+--
+ErrorFrame
+--
+BackFrame
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>720</x>
+      <y>424</y>
+      <w>80</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>tkinter</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>400</x>
+      <y>312</y>
+      <w>208</w>
+      <h>344</h>
+    </coordinates>
+    <panel_attributes>GameFrame
+--
++void drawPacman(main_game_frame)
++void drawGhost(x,y)
++item findPacman()
++void onKeyPressed(e)
++void movePM()
++void moveGhost()
++item findWall()
++list bboxPacman()
++list bboxGhost(color)
++overlap = findOverlap(x1,y1,x2,y2)
+--
+MGameFrame
+--
+mainFrame
+--
+closeFrame
+--
+HelpFrame
+--
+InfoFrame
+--
++void mainPress()
++void exitPress()
++void helpPress()
++void pausePress()
+--
+ScoreFrame
+--
++void updateScore(score)
+--
+LivesFrame
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>176</y>
+      <w>344</w>
+      <h>600</h>
+    </coordinates>
+    <panel_attributes>DrawingGenerics
+--
++int PIXEL = 2
++int TILE_SIZE = 8 * PIXEL
++int TILE_CENTERING = TILE_SIZE / 2
++int MAP_WIDTH_UNITS = 28
++int MAP_HEIGHT_UNITS = 36
++int MAP_WIDTH = TILE_SIZE * MAP_WIDTH_UNITS
++int MAP_HEIGHT = TILE_SIZE * MAP_HEIGHT_UNITS
+
+# Screen refresh rate (in milliseconds) ~ 60 frames/second
++int REFRESH_RATE = 17
++int CYCLES_PER_SECOND = 1000 / REFRESH_RATE
+
+# For the drawn wall, not the specification wall used in game logic
++int OUTER_WALL_WIDTH = TILE_SIZE / 2
+
+# Ghost modes of operation (states)
++dict GHOST_STATE = {'Chase': 1,'Scatter': 2,'Fright': 3}
+
+# Pacman modes of operation (states)
++dict PACMAN_STATE = {'Normal': 1,'Energized': 2}
+
++int PACMAN_RADIUS = 7 * TILE_SIZE / 8
++int GHOST_RADIUS = 7 * TILE_SIZE / 8
++int DOT_RADIUS = TILE_SIZE / 8
++int ENERGIZER_RADIUS = TILE_SIZE / 2
++int CHERRY_RADIUS = ENERGIZER_RADIUS
+
++string WALL_SHAPE = "rectangle"
++string PACMAN_SHAPE = "oval"
++string GHOST_SHAPE = "rectangle"
++string DOT_SHAPE = "oval"
++string ENERGIZER_SHAPE = "oval"
++string CHERRY_SHAPE = "rectangle"
+
++string WALL_OUTLINE = "blue"
++string DOOR_COLOR = "grey"
++string PACMAN_COLOR = "yellow" 
++dict GHOST_COLOR = {1: "cyan", 2: "pink", 3: "orange", 4: "red"}
++dict GHOST_FRIGHT_COLOR = {1: "blue", 2: "white"}
++string DOT_COLOR = "white"
++dict ENERGIZER_COLOR = {1: "white", 2: "black"}
++string CHERRY_COLOR = "red"
+
+## Canvas different tag types
++string TAG_GHOST = "Ghost"
++string TAG_PACMAN = "Pacman"
++string TAG_WALL = "Wall"
++string TAG_DOOR = "Door"
++string TAG_DOT = "Dot"
++string TAG_ENERGIZER = "Energizer"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>320</x>
+      <y>400</y>
+      <w>102</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>24;40;80;40</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>584</x>
+      <y>392</y>
+      <w>152</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>24;40;136;40</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>584</x>
+      <y>512</y>
+      <w>152</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>24;40;136;40</additional_attributes>
+  </element>
+</diagram>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>org.menu.NewUser</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="org-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="org-module.html">Package&nbsp;org</a> ::
+        <a href="org.menu-module.html">Package&nbsp;menu</a> ::
+        Module&nbsp;NewUser
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="org.menu.NewUser-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="org.menu.NewUser-module.html">Module org.menu.NewUser</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-docstring">This module contains the New User Menu class "NewUserMenu".</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-docstring">@author: Shaun Hamelin-Owens</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-docstring">@author: Jason Cohen</tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-docstring">@author: Sasithra Thanabalan</tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-docstring">@author: Andrew Walker</tt> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-0" class="py-name" targets="Package org.display=org.display-module.html"><a title="org.display" class="py-name" href="#" onclick="return doclink('link-0', 'display', 'link-0');">display</a></tt> <tt class="py-keyword">import</tt> <tt id="link-1" class="py-name" targets="Module org.display.NewUserFrame=org.display.NewUserFrame-module.html,Class org.display.NewUserFrame.NewUserFrame=org.display.NewUserFrame.NewUserFrame-class.html"><a title="org.display.NewUserFrame
+org.display.NewUserFrame.NewUserFrame" class="py-name" href="#" onclick="return doclink('link-1', 'NewUserFrame', 'link-1');">NewUserFrame</a></tt> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"> </tt>
+<a name="NewUserMenu"></a><div id="NewUserMenu-def"><a name="L10"></a><tt class="py-lineno"> 10</tt> <a class="py-toggle" href="#" id="NewUserMenu-toggle" onclick="return toggle('NewUserMenu');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="org.menu.NewUser.NewUserMenu-class.html">NewUserMenu</a><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="NewUserMenu-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="NewUserMenu-expanded"><a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line"><tt class="py-docstring">        This class deals with the New User Menu components.</tt> </tt>
+<a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="NewUserMenu.__init__"></a><div id="NewUserMenu.__init__-def"><a name="L14"></a><tt class="py-lineno"> 14</tt> <a class="py-toggle" href="#" id="NewUserMenu.__init__-toggle" onclick="return toggle('NewUserMenu.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.menu.NewUser.NewUserMenu-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">menu_manager</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="NewUserMenu.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="NewUserMenu.__init__-expanded"><a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line"><tt class="py-docstring">                Class contructor for the New User Menu Class. \n</tt> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line"><tt class="py-docstring">                Initializes the window and menu components. \n</tt> </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line"><tt class="py-docstring">                Sets up keybindings.</tt> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line"><tt class="py-docstring">                @param menu_manager: The game object (from org/Pacman.py)</tt> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">menu_manager</tt> <tt class="py-op">=</tt> <tt class="py-name">menu_manager</tt> </tt>
+<a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">uiCoordinator</tt> <tt class="py-op">=</tt> <tt class="py-name">menu_manager</tt><tt class="py-op">.</tt><tt class="py-name">uiCoordinator</tt> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">open_window</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line"> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-2" class="py-name" targets="Method org.gameplay.Gameplay.GamePlay.setupWindow()=org.gameplay.Gameplay.GamePlay-class.html#setupWindow,Method org.menu.ForgotMenu.ForgotMenu.setupWindow()=org.menu.ForgotMenu.ForgotMenu-class.html#setupWindow,Method org.menu.GameMenu.GameMenu.setupWindow()=org.menu.GameMenu.GameMenu-class.html#setupWindow,Method org.menu.LoginMenu.LoginMenu.setupWindow()=org.menu.LoginMenu.LoginMenu-class.html#setupWindow,Method org.menu.NewUser.NewUserMenu.setupWindow()=org.menu.NewUser.NewUserMenu-class.html#setupWindow"><a title="org.gameplay.Gameplay.GamePlay.setupWindow
+org.menu.ForgotMenu.ForgotMenu.setupWindow
+org.menu.GameMenu.GameMenu.setupWindow
+org.menu.LoginMenu.LoginMenu.setupWindow
+org.menu.NewUser.NewUserMenu.setupWindow" class="py-name" href="#" onclick="return doclink('link-2', 'setupWindow', 'link-2');">setupWindow</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-3" class="py-name" targets="Method org.menu.ForgotMenu.ForgotMenu.setupBinds()=org.menu.ForgotMenu.ForgotMenu-class.html#setupBinds,Method org.menu.GameMenu.GameMenu.setupBinds()=org.menu.GameMenu.GameMenu-class.html#setupBinds,Method org.menu.LoginMenu.LoginMenu.setupBinds()=org.menu.LoginMenu.LoginMenu-class.html#setupBinds,Method org.menu.NewUser.NewUserMenu.setupBinds()=org.menu.NewUser.NewUserMenu-class.html#setupBinds"><a title="org.menu.ForgotMenu.ForgotMenu.setupBinds
+org.menu.GameMenu.GameMenu.setupBinds
+org.menu.LoginMenu.LoginMenu.setupBinds
+org.menu.NewUser.NewUserMenu.setupBinds" class="py-name" href="#" onclick="return doclink('link-3', 'setupBinds', 'link-3');">setupBinds</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line">                 </tt>
+<a name="NewUserMenu.setupBinds"></a><div id="NewUserMenu.setupBinds-def"><a name="L28"></a><tt class="py-lineno"> 28</tt> <a class="py-toggle" href="#" id="NewUserMenu.setupBinds-toggle" onclick="return toggle('NewUserMenu.setupBinds');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.menu.NewUser.NewUserMenu-class.html#setupBinds">setupBinds</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="NewUserMenu.setupBinds-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="NewUserMenu.setupBinds-expanded"><a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line"><tt class="py-docstring">                Sets up keybindings.</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">exit</tt><tt class="py-op">.</tt><tt class="py-name">bind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Button-1&gt;"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-4" class="py-name" targets="Method org.menu.NewUser.NewUserMenu.closeNewUser()=org.menu.NewUser.NewUserMenu-class.html#closeNewUser"><a title="org.menu.NewUser.NewUserMenu.closeNewUser" class="py-name" href="#" onclick="return doclink('link-4', 'closeNewUser', 'link-4');">closeNewUser</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">exit</tt><tt class="py-op">.</tt><tt class="py-name">bind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-5" class="py-name"><a title="org.menu.NewUser.NewUserMenu.closeNewUser" class="py-name" href="#" onclick="return doclink('link-5', 'closeNewUser', 'link-4');">closeNewUser</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">newButton</tt><tt class="py-op">.</tt><tt class="py-name">bind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Button-1&gt;"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-6" class="py-name" targets="Method org.menu.NewUser.NewUserMenu.createNewUser()=org.menu.NewUser.NewUserMenu-class.html#createNewUser"><a title="org.menu.NewUser.NewUserMenu.createNewUser" class="py-name" href="#" onclick="return doclink('link-6', 'createNewUser', 'link-6');">createNewUser</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">newButton</tt><tt class="py-op">.</tt><tt class="py-name">bind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-7" class="py-name"><a title="org.menu.NewUser.NewUserMenu.createNewUser" class="py-name" href="#" onclick="return doclink('link-7', 'createNewUser', 'link-6');">createNewUser</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">error_frame</tt><tt class="py-op">.</tt><tt class="py-name">error_button</tt><tt class="py-op">.</tt><tt class="py-name">bind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Button-1&gt;"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-8" class="py-name" targets="Method org.menu.ForgotMenu.ForgotMenu.closeError()=org.menu.ForgotMenu.ForgotMenu-class.html#closeError,Method org.menu.LoginMenu.LoginMenu.closeError()=org.menu.LoginMenu.LoginMenu-class.html#closeError,Method org.menu.NewUser.NewUserMenu.closeError()=org.menu.NewUser.NewUserMenu-class.html#closeError,Method org.menu.OptionsMenu.OptionMenu.closeError()=org.menu.OptionsMenu.OptionMenu-class.html#closeError"><a title="org.menu.ForgotMenu.ForgotMenu.closeError
+org.menu.LoginMenu.LoginMenu.closeError
+org.menu.NewUser.NewUserMenu.closeError
+org.menu.OptionsMenu.OptionMenu.closeError" class="py-name" href="#" onclick="return doclink('link-8', 'closeError', 'link-8');">closeError</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">error_frame</tt><tt class="py-op">.</tt><tt class="py-name">error_button</tt><tt class="py-op">.</tt><tt class="py-name">bind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-9" class="py-name"><a title="org.menu.ForgotMenu.ForgotMenu.closeError
+org.menu.LoginMenu.LoginMenu.closeError
+org.menu.NewUser.NewUserMenu.closeError
+org.menu.OptionsMenu.OptionMenu.closeError" class="py-name" href="#" onclick="return doclink('link-9', 'closeError', 'link-8');">closeError</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line"> </tt>
+<a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">iuname</tt><tt class="py-op">.</tt><tt class="py-name">bind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-10" class="py-name"><a title="org.menu.NewUser.NewUserMenu.createNewUser" class="py-name" href="#" onclick="return doclink('link-10', 'createNewUser', 'link-6');">createNewUser</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">ipw</tt><tt class="py-op">.</tt><tt class="py-name">bind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-11" class="py-name"><a title="org.menu.NewUser.NewUserMenu.createNewUser" class="py-name" href="#" onclick="return doclink('link-11', 'createNewUser', 'link-6');">createNewUser</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">ipw_check</tt><tt class="py-op">.</tt><tt class="py-name">bind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-12" class="py-name"><a title="org.menu.NewUser.NewUserMenu.createNewUser" class="py-name" href="#" onclick="return doclink('link-12', 'createNewUser', 'link-6');">createNewUser</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">realname</tt><tt class="py-op">.</tt><tt class="py-name">bind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="org.menu.NewUser.NewUserMenu.createNewUser" class="py-name" href="#" onclick="return doclink('link-13', 'createNewUser', 'link-6');">createNewUser</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">iquestion</tt><tt class="py-op">.</tt><tt class="py-name">bind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-14" class="py-name"><a title="org.menu.NewUser.NewUserMenu.createNewUser" class="py-name" href="#" onclick="return doclink('link-14', 'createNewUser', 'link-6');">createNewUser</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">ianswer</tt><tt class="py-op">.</tt><tt class="py-name">bind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-15" class="py-name"><a title="org.menu.NewUser.NewUserMenu.createNewUser" class="py-name" href="#" onclick="return doclink('link-15', 'createNewUser', 'link-6');">createNewUser</a></tt><tt class="py-op">)</tt> </tt>
+</div><a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line"> </tt>
+<a name="NewUserMenu.unBind"></a><div id="NewUserMenu.unBind-def"><a name="L46"></a><tt class="py-lineno"> 46</tt> <a class="py-toggle" href="#" id="NewUserMenu.unBind-toggle" onclick="return toggle('NewUserMenu.unBind');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.menu.NewUser.NewUserMenu-class.html#unBind">unBind</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="NewUserMenu.unBind-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="NewUserMenu.unBind-expanded"><a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line"><tt class="py-docstring">                Unbind keybindings.</tt> </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">exit</tt><tt class="py-op">.</tt><tt class="py-name">unbind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Button-1&gt;"</tt><tt class="py-op">)</tt> </tt>
+<a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">exit</tt><tt class="py-op">.</tt><tt class="py-name">unbind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">)</tt> </tt>
+<a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">newButton</tt><tt class="py-op">.</tt><tt class="py-name">unbind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">)</tt> </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">error_frame</tt><tt class="py-op">.</tt><tt class="py-name">error_button</tt><tt class="py-op">.</tt><tt class="py-name">unbind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">)</tt> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">newButton</tt><tt class="py-op">.</tt><tt class="py-name">unbind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Button-1&gt;"</tt><tt class="py-op">)</tt> </tt>
+<a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">error_frame</tt><tt class="py-op">.</tt><tt class="py-name">error_button</tt><tt class="py-op">.</tt><tt class="py-name">unbind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Button-1&gt;"</tt><tt class="py-op">)</tt> </tt>
+<a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line"> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">main_newuser_frame</tt><tt class="py-op">.</tt><tt class="py-name">unbind_all</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">)</tt> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">iuname</tt><tt class="py-op">.</tt><tt class="py-name">unbind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">)</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">ipw</tt><tt class="py-op">.</tt><tt class="py-name">unbind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">)</tt> </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">ipw_check</tt><tt class="py-op">.</tt><tt class="py-name">unbind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">)</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">realname</tt><tt class="py-op">.</tt><tt class="py-name">unbind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">)</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">iquestion</tt><tt class="py-op">.</tt><tt class="py-name">unbind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">)</tt> </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">ianswer</tt><tt class="py-op">.</tt><tt class="py-name">unbind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line"> </tt>
+<a name="NewUserMenu.setupWindow"></a><div id="NewUserMenu.setupWindow-def"><a name="L65"></a><tt class="py-lineno"> 65</tt> <a class="py-toggle" href="#" id="NewUserMenu.setupWindow-toggle" onclick="return toggle('NewUserMenu.setupWindow');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.menu.NewUser.NewUserMenu-class.html#setupWindow">setupWindow</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="NewUserMenu.setupWindow-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="NewUserMenu.setupWindow-expanded"><a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line"><tt class="py-docstring">                sets up the window.</tt> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">main_newuser_frame</tt> <tt class="py-op">=</tt> <tt id="link-16" class="py-name"><a title="org.display.NewUserFrame
+org.display.NewUserFrame.NewUserFrame" class="py-name" href="#" onclick="return doclink('link-16', 'NewUserFrame', 'link-1');">NewUserFrame</a></tt><tt class="py-op">.</tt><tt id="link-17" class="py-name"><a title="org.display.NewUserFrame
+org.display.NewUserFrame.NewUserFrame" class="py-name" href="#" onclick="return doclink('link-17', 'NewUserFrame', 'link-1');">NewUserFrame</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">uiCoordinator</tt><tt class="py-op">)</tt> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">main_newuser_frame</tt><tt class="py-op">.</tt><tt class="py-name">_nf</tt> </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">error_frame</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">main_newuser_frame</tt><tt class="py-op">.</tt><tt class="py-name">_ef</tt> </tt>
+<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">iuname</tt><tt class="py-op">.</tt><tt class="py-name">focus_set</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line"> </tt>
+<a name="NewUserMenu.createNewUser"></a><div id="NewUserMenu.createNewUser-def"><a name="L74"></a><tt class="py-lineno"> 74</tt> <a class="py-toggle" href="#" id="NewUserMenu.createNewUser-toggle" onclick="return toggle('NewUserMenu.createNewUser');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.menu.NewUser.NewUserMenu-class.html#createNewUser">createNewUser</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">e</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="NewUserMenu.createNewUser-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="NewUserMenu.createNewUser-expanded"><a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line"><tt class="py-docstring">                Fetch the inputed parameters from the entry widgets (username, password,</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line"><tt class="py-docstring">                password check, real name, question, answer). \n</tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line"><tt class="py-docstring">                If any are left empy, error window is opened with an approriate message </tt> </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line"><tt class="py-docstring">                (Empty ** Field). \n</tt> </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line"><tt class="py-docstring">                If the passwords don't match, error window is opened with the appropriate </tt> </tt>
+<a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line"><tt class="py-docstring">                message. \n</tt> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line"><tt class="py-docstring">                If the user already exists, error window is opened with the appropriate </tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line"><tt class="py-docstring">                message. \n</tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line"><tt class="py-docstring">                If everything is good, create a new user (through db connection), </tt> </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line"><tt class="py-docstring">                go to login menu, destroy new user window/menu, remove keybinds.</tt> </tt>
+<a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line"><tt class="py-docstring">                @param e: Passed by keybinding, not actually used.</tt> </tt>
+<a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">                <tt class="py-name">username</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">iuname</tt><tt class="py-op">.</tt><tt class="py-name">get</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">                <tt class="py-name">password</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">ipw</tt><tt class="py-op">.</tt><tt class="py-name">get</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line">                <tt class="py-name">password_check</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">ipw_check</tt><tt class="py-op">.</tt><tt class="py-name">get</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">                <tt class="py-name">realname</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">realname</tt><tt class="py-op">.</tt><tt class="py-name">get</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">                <tt class="py-name">question</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">iquestion</tt><tt class="py-op">.</tt><tt class="py-name">get</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">                <tt class="py-name">answer</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">ianswer</tt><tt class="py-op">.</tt><tt class="py-name">get</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line"> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-op">(</tt><tt class="py-keyword">not</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">open_window</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-op">(</tt><tt class="py-name">username</tt> <tt class="py-op">==</tt> <tt class="py-string">""</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-18" class="py-name" targets="Method org.menu.NewUser.NewUserMenu.error()=org.menu.NewUser.NewUserMenu-class.html#error"><a title="org.menu.NewUser.NewUserMenu.error" class="py-name" href="#" onclick="return doclink('link-18', 'error', 'link-18');">error</a></tt><tt class="py-op">(</tt><tt class="py-string">"Empty Name Field"</tt><tt class="py-op">)</tt> </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">                        <tt class="py-keyword">elif</tt> <tt class="py-op">(</tt><tt class="py-name">password</tt> <tt class="py-op">==</tt> <tt class="py-string">""</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-19" class="py-name"><a title="org.menu.NewUser.NewUserMenu.error" class="py-name" href="#" onclick="return doclink('link-19', 'error', 'link-18');">error</a></tt><tt class="py-op">(</tt><tt class="py-string">"Empty Password Field"</tt><tt class="py-op">)</tt> </tt>
+<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line">                        <tt class="py-keyword">elif</tt> <tt class="py-op">(</tt><tt class="py-name">realname</tt> <tt class="py-op">==</tt> <tt class="py-string">""</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-20" class="py-name"><a title="org.menu.NewUser.NewUserMenu.error" class="py-name" href="#" onclick="return doclink('link-20', 'error', 'link-18');">error</a></tt><tt class="py-op">(</tt><tt class="py-string">"Empty Real Name Field"</tt><tt class="py-op">)</tt> </tt>
+<a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">                        <tt class="py-keyword">elif</tt> <tt class="py-op">(</tt><tt class="py-name">question</tt> <tt class="py-op">==</tt> <tt class="py-string">""</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-21" class="py-name"><a title="org.menu.NewUser.NewUserMenu.error" class="py-name" href="#" onclick="return doclink('link-21', 'error', 'link-18');">error</a></tt><tt class="py-op">(</tt><tt class="py-string">"Empty Question Field"</tt><tt class="py-op">)</tt> </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line">                        <tt class="py-keyword">elif</tt> <tt class="py-op">(</tt><tt class="py-name">answer</tt> <tt class="py-op">==</tt> <tt class="py-string">""</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-22" class="py-name"><a title="org.menu.NewUser.NewUserMenu.error" class="py-name" href="#" onclick="return doclink('link-22', 'error', 'link-18');">error</a></tt><tt class="py-op">(</tt><tt class="py-string">"Empty Answer Field"</tt><tt class="py-op">)</tt> </tt>
+<a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line">                        <tt class="py-keyword">elif</tt> <tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">menu_manager</tt><tt class="py-op">.</tt><tt class="py-name">con</tt><tt class="py-op">.</tt><tt id="link-23" class="py-name" targets="Method org.db.DbInt.Connection.checkUser()=org.db.DbInt.Connection-class.html#checkUser"><a title="org.db.DbInt.Connection.checkUser" class="py-name" href="#" onclick="return doclink('link-23', 'checkUser', 'link-23');">checkUser</a></tt><tt class="py-op">(</tt><tt class="py-name">username</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-24" class="py-name"><a title="org.menu.NewUser.NewUserMenu.error" class="py-name" href="#" onclick="return doclink('link-24', 'error', 'link-18');">error</a></tt><tt class="py-op">(</tt><tt class="py-string">"Username is already taken"</tt><tt class="py-op">)</tt> </tt>
+<a name="L108"></a><tt class="py-lineno">108</tt>  <tt class="py-line">                        <tt class="py-keyword">elif</tt> <tt class="py-op">(</tt><tt class="py-name">password</tt> <tt class="py-op">==</tt> <tt class="py-name">password_check</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">menu_manager</tt><tt class="py-op">.</tt><tt class="py-name">con</tt><tt class="py-op">.</tt><tt id="link-25" class="py-name" targets="Method org.db.DbInt.Connection.createUser()=org.db.DbInt.Connection-class.html#createUser"><a title="org.db.DbInt.Connection.createUser" class="py-name" href="#" onclick="return doclink('link-25', 'createUser', 'link-25');">createUser</a></tt><tt class="py-op">(</tt><tt class="py-name">username</tt><tt class="py-op">,</tt> <tt class="py-name">password</tt><tt class="py-op">,</tt> <tt class="py-name">realname</tt><tt class="py-op">,</tt> </tt>
+<a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line">                                                <tt class="py-name">question</tt><tt class="py-op">,</tt> <tt class="py-name">answer</tt><tt class="py-op">)</tt> </tt>
+<a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-26" class="py-name"><a title="org.menu.NewUser.NewUserMenu.closeNewUser" class="py-name" href="#" onclick="return doclink('link-26', 'closeNewUser', 'link-4');">closeNewUser</a></tt><tt class="py-op">(</tt><tt class="py-string">"a"</tt><tt class="py-op">)</tt> </tt>
+<a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line">                        <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-27" class="py-name"><a title="org.menu.NewUser.NewUserMenu.error" class="py-name" href="#" onclick="return doclink('link-27', 'error', 'link-18');">error</a></tt><tt class="py-op">(</tt><tt class="py-string">"Passwords do not match"</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line"> </tt>
+<a name="NewUserMenu.closeError"></a><div id="NewUserMenu.closeError-def"><a name="L115"></a><tt class="py-lineno">115</tt> <a class="py-toggle" href="#" id="NewUserMenu.closeError-toggle" onclick="return toggle('NewUserMenu.closeError');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.menu.NewUser.NewUserMenu-class.html#closeError">closeError</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">e</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="NewUserMenu.closeError-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="NewUserMenu.closeError-expanded"><a name="L116"></a><tt class="py-lineno">116</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line"><tt class="py-docstring">                Close the error window, refocus on username entry.</tt> </tt>
+<a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line"><tt class="py-docstring">                @param e: Passed by keybinding, not actually used.</tt> </tt>
+<a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">error_frame</tt><tt class="py-op">.</tt><tt class="py-name">error_button</tt><tt class="py-op">.</tt><tt class="py-name">unbind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">)</tt> </tt>
+<a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">new_frame</tt><tt class="py-op">.</tt><tt class="py-name">iuname</tt><tt class="py-op">.</tt><tt class="py-name">focus_set</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L122"></a><tt class="py-lineno">122</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">main_newuser_frame</tt><tt class="py-op">.</tt><tt id="link-28" class="py-name" targets="Method org.display.FrameMaster.FrameMaster.lowerFrame()=org.display.FrameMaster.FrameMaster-class.html#lowerFrame"><a title="org.display.FrameMaster.FrameMaster.lowerFrame" class="py-name" href="#" onclick="return doclink('link-28', 'lowerFrame', 'link-28');">lowerFrame</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">error_frame</tt><tt class="py-op">.</tt><tt class="py-name">error_frame</tt><tt class="py-op">)</tt> </tt>
+<a name="L123"></a><tt class="py-lineno">123</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">open_window</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+</div><a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line"> </tt>
+<a name="NewUserMenu.error"></a><div id="NewUserMenu.error-def"><a name="L125"></a><tt class="py-lineno">125</tt> <a class="py-toggle" href="#" id="NewUserMenu.error-toggle" onclick="return toggle('NewUserMenu.error');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.menu.NewUser.NewUserMenu-class.html#error">error</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">message</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="NewUserMenu.error-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="NewUserMenu.error-expanded"><a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line"><tt class="py-docstring">                Open the error window and open error message.</tt> </tt>
+<a name="L128"></a><tt class="py-lineno">128</tt>  <tt class="py-line"><tt class="py-docstring">                @param message: The message to display on the error window.</tt> </tt>
+<a name="L129"></a><tt class="py-lineno">129</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L130"></a><tt class="py-lineno">130</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">error_frame</tt><tt class="py-op">.</tt><tt class="py-name">error_button</tt><tt class="py-op">.</tt><tt class="py-name">focus_set</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">error_frame</tt><tt class="py-op">.</tt><tt class="py-name">error_button</tt><tt class="py-op">.</tt><tt class="py-name">bind</tt><tt class="py-op">(</tt><tt class="py-string">"&lt;Return&gt;"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-29" class="py-name"><a title="org.menu.ForgotMenu.ForgotMenu.closeError
+org.menu.LoginMenu.LoginMenu.closeError
+org.menu.NewUser.NewUserMenu.closeError
+org.menu.OptionsMenu.OptionMenu.closeError" class="py-name" href="#" onclick="return doclink('link-29', 'closeError', 'link-8');">closeError</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">error_frame</tt><tt class="py-op">.</tt><tt class="py-name">error_message</tt><tt class="py-op">.</tt><tt class="py-name">configure</tt><tt class="py-op">(</tt><tt class="py-name">text</tt> <tt class="py-op">=</tt> <tt class="py-name">message</tt><tt class="py-op">)</tt> </tt>
+<a name="L133"></a><tt class="py-lineno">133</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">main_newuser_frame</tt><tt class="py-op">.</tt><tt id="link-30" class="py-name" targets="Method org.display.FrameMaster.FrameMaster.liftFrame()=org.display.FrameMaster.FrameMaster-class.html#liftFrame"><a title="org.display.FrameMaster.FrameMaster.liftFrame" class="py-name" href="#" onclick="return doclink('link-30', 'liftFrame', 'link-30');">liftFrame</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">error_frame</tt><tt class="py-op">.</tt><tt class="py-name">error_frame</tt><tt class="py-op">)</tt> </tt>
+<a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">open_window</tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt> </tt>
+</div><a name="L135"></a><tt class="py-lineno">135</tt>  <tt class="py-line"> </tt>
+<a name="NewUserMenu.closeNewUser"></a><div id="NewUserMenu.closeNewUser-def"><a name="L136"></a><tt class="py-lineno">136</tt> <a class="py-toggle" href="#" id="NewUserMenu.closeNewUser-toggle" onclick="return toggle('NewUserMenu.closeNewUser');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.menu.NewUser.NewUserMenu-class.html#closeNewUser">closeNewUser</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">e</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="NewUserMenu.closeNewUser-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="NewUserMenu.closeNewUser-expanded"><a name="L137"></a><tt class="py-lineno">137</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L138"></a><tt class="py-lineno">138</tt>  <tt class="py-line"><tt class="py-docstring">                Closes to the login menu, destroy new user window, remove keybinds.</tt> </tt>
+<a name="L139"></a><tt class="py-lineno">139</tt>  <tt class="py-line"><tt class="py-docstring">                @param e: Passed by keybinding, not actually used.</tt> </tt>
+<a name="L140"></a><tt class="py-lineno">140</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L141"></a><tt class="py-lineno">141</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-31" class="py-name" targets="Method org.gameplay.Gameplay.GamePlay.unBind()=org.gameplay.Gameplay.GamePlay-class.html#unBind,Method org.menu.ForgotMenu.ForgotMenu.unBind()=org.menu.ForgotMenu.ForgotMenu-class.html#unBind,Method org.menu.GameMenu.GameMenu.unBind()=org.menu.GameMenu.GameMenu-class.html#unBind,Method org.menu.LoginMenu.LoginMenu.unBind()=org.menu.LoginMenu.LoginMenu-class.html#unBind,Method org.menu.NewUser.NewUserMenu.unBind()=org.menu.NewUser.NewUserMenu-class.html#unBind,Method org.menu.OptionsMenu.OptionMenu.unBind()=org.menu.OptionsMenu.OptionMenu-class.html#unBind"><a title="org.gameplay.Gameplay.GamePlay.unBind
+org.menu.ForgotMenu.ForgotMenu.unBind
+org.menu.GameMenu.GameMenu.unBind
+org.menu.LoginMenu.LoginMenu.unBind
+org.menu.NewUser.NewUserMenu.unBind
+org.menu.OptionsMenu.OptionMenu.unBind" class="py-name" href="#" onclick="return doclink('link-31', 'unBind', 'link-31');">unBind</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L142"></a><tt class="py-lineno">142</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">menu_manager</tt><tt class="py-op">.</tt><tt id="link-32" class="py-name" targets="Method org.Pacman.Game.runLogin()=org.Pacman.Game-class.html#runLogin"><a title="org.Pacman.Game.runLogin" class="py-name" href="#" onclick="return doclink('link-32', 'runLogin', 'link-32');">runLogin</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L143"></a><tt class="py-lineno">143</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">main_newuser_frame</tt><tt class="py-op">.</tt><tt id="link-33" class="py-name" targets="Variable org.Pacman.root=org.Pacman-module.html#root"><a title="org.Pacman.root" class="py-name" href="#" onclick="return doclink('link-33', 'root', 'link-33');">root</a></tt><tt class="py-op">.</tt><tt class="py-name">destroy</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L144"></a><tt class="py-lineno">144</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="org-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Dec  6 23:58:29 2012
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

@@ -1,0 +1,534 @@
+
+#--------------------------------------------------------------------------------------------
+# Team 13
+# ECSE 321 Final Project
+# Version 1.3
+#
+# DESCRIPTION: Ghost class
+#
+# The Ghost class initializes and controls all game logic involving Ghost sprites.
+# It interacts with the Canvas that is responsible for drawing each instance of the Ghosts
+# and uses the Gameplay class as a controller to interact with other characters in the game.
+#--------------------------------------------------------------------------------------------
+
+import random
+import math
+from Sprite import Sprite
+from maps import Map1
+from display import DrawingGenerics
+import sys
+
+class Ghost(Sprite):
+	# xStart = 5 + u*13.5
+	# yStart = 5 + u*11
+
+## Initialize all the global variables for each ghost
+	def __init__(self, gameManager, gameCanvas, ID, specs):
+		super(Ghost, self).__init__(gameCanvas, specs)
+		
+		self.gameManager = gameManager
+		self.ID = ID
+		self.state = DrawingGenerics.GHOST_STATE['Scatter'] # CHANGED SINCE DEMO
+		self.stateFlag = self.state # CHANGED SINCE DEMO
+		self.origColor = self.color
+		self.frightCycles = 0;
+		self.dotLimit = 0
+		self.specs = specs
+		self.destX = 0
+		self.destY = 0
+		
+		self.xStart = specs['xCenter']
+		self.yStart = specs['yCenter']
+		
+		self.speedNormal = specs['speed']
+		self.speedTunnel = specs['speed_tunnel']
+		self.speedEaten = specs['speed_eaten']
+		self.speedFright = specs['speed_fright']
+		
+		self.GHOST_START = {'xCenter': (14 * DrawingGenerics.TILE_SIZE),
+				'yCenter': (14 * DrawingGenerics.TILE_SIZE) + DrawingGenerics.TILE_CENTERING}
+
+		
+		self.toggleChaseScatterCycle = 6 * DrawingGenerics.CYCLES_PER_SECOND
+		self.toggleChaseScatter = self.toggleChaseScatterCycle
+		
+		self.draw()
+		self.initGame()
+	
+## Interacts with the Canvas to draw each Ghost character
+	def draw(self):
+		self.canvasID = self.gameCanvas.create_rectangle(self.xLeft, self.yTop,
+				self.xRight, self.yBottom, fill = self.color, tags = self.tagType)
+	
+	
+## Initialize the game by stopping the ghosts
+	def initGame(self):
+		self.started = False
+		
+		self.left = False          ###
+		self.right = False         # Ghost starts the
+		self.up = False            # game not moving
+		self.down = False          ###
+		
+## If the Pacman is eaten by a ghost, this method resets the ghosts
+	def restart(self):
+		self.dotLimit = 240 - len(self.gameManager.getDots())
+		self.stop()
+		self.started = False
+		self.deleteDrawing()
+		
+		self.move(self.xStart - self.xCenter, self.yStart - self.yCenter)
+		self.draw()
+		self.scatter()
+		self.toggleChaseScatter = self.toggleChaseScatterCycle
+		
+		
+## Move the ghost to the starting location outside the ghost enclosure
+	def start(self):
+		
+		self.move(self.GHOST_START['xCenter'] - self.xCenter,
+					self.GHOST_START['yCenter'] - self.yCenter)
+					
+		
+		
+		self.started_()
+		# self.root.after(1100, self.started_)
+
+## Set ghost initial direction		
+	def started_(self):
+		if (self.color == 'red'):
+			self.left = True
+		
+		elif (self.color == 'cyan'):
+			self.right = True
+			
+		elif (self.color == 'pink'):
+			self.right = True
+			
+		else:
+			self.left = True
+		self.started = True
+
+## Release the ghost if the number of dots eaten exceeds the minimal amount
+	def checkStartingConditions(self):
+		dotsEaten = self.gameManager.getDotsEaten() - self.dotLimit
+		
+		if self.ID == 1:
+			if dotsEaten >= 30:
+				self.start()
+		elif self.ID == 3:
+			if dotsEaten >= 20:
+				self.start()
+		elif self.ID == 2:
+			if dotsEaten >= 10:
+				self.start()
+		elif self.ID == 4:
+			if dotsEaten >= 0:
+				self.start()
+
+## Pacman eats this ghost
+	def eat(self):
+		# self.move(Map1.GHOST_START['xCenter'] - self.xCenter,
+				# Map1.GHOST_START['yCenter'] - self.yCenter)
+		# self.initGame()
+		# self.start()
+		# self.started_()
+		# self.chase()
+		self.returnToPen()
+		return 200
+				
+## Set the chase mode for the ghost
+	def chase(self):
+		self.changeColor(self.origColor)
+		self.state = DrawingGenerics.GHOST_STATE['Chase']
+		self.speed = self.speedNormal
+		self.stateFlag = self.state
+		self.destX, self.destY = self.destinationTile()
+		self.frightCycles = 0
+		# self.toggleChaseScatter = 6* DrawingGenerics.CYCLES_PER_SECOND
+
+## Set the chase mode for the ghost
+	def scatter(self):
+		self.changeColor(self.origColor)
+		self.state = DrawingGenerics.GHOST_STATE['Scatter']
+		self.speed = self.speedNormal
+		self.stateFlag = self.state
+		self.destX, self.destY = self.destinationTile()
+		# self.toggleChaseScatter = 6* DrawingGenerics.CYCLES_PER_SECOND
+
+## Return to pen after being eaten
+	def returnToPen(self):
+		self.changeColor("grey")
+		self.state = DrawingGenerics.GHOST_STATE['Eaten']
+		self.speed = self.speedEaten
+		self.destX = 14
+		self.destY = 14.5
+		
+## Set the chase mode for the ghost
+	def fright(self, frightCycles):
+		self.changeColor(DrawingGenerics.GHOST_FRIGHT_COLOR[1])
+		self.state = DrawingGenerics.GHOST_STATE['Fright']
+		self.speed = self.speedFright
+		self.frightCycles = frightCycles
+		self.reverseDirection()
+		
+	
+## If Ghost is travelling through a tunnel, set speed to speed_tunnel, otherwise do nothing
+	def isInTunnel(self):
+		if (self.yCenter == 18*DrawingGenerics.TILE_SIZE - DrawingGenerics.TILE_CENTERING 
+				and (self.xCenter < 6 *DrawingGenerics.TILE_SIZE - DrawingGenerics.TILE_CENTERING
+				or self.xCenter > 22 * DrawingGenerics.TILE_SIZE + DrawingGenerics.TILE_CENTERING)):
+			return True
+		
+		return False
+			
+## When the ghost goes into fright mode, reverse the ghost direction
+	def reverseDirection(self):
+		if self.left:
+			self.left = False
+			self.right = True
+		elif self.right:
+			self.right = False
+			self.left = True
+		elif self.up:
+			self.up = False
+			self.down = True
+		elif self.down:
+			self.down = False
+			self.up = True
+	
+	def toggleColor(self):
+		if self.color == DrawingGenerics.GHOST_FRIGHT_COLOR[1]:
+			self.changeColor(DrawingGenerics.GHOST_FRIGHT_COLOR[2])
+		else:
+			self.changeColor(DrawingGenerics.GHOST_FRIGHT_COLOR[1])
+
+	def toggleState(self):
+		if self.stateFlag == self.state:
+			if self.state == DrawingGenerics.GHOST_STATE['Chase']:
+				self.scatter()
+				self.reverseDirection()
+			elif self.state == DrawingGenerics.GHOST_STATE['Scatter']:
+				self.chase()
+				self.reverseDirection()
+		elif self.stateFlag == DrawingGenerics.GHOST_STATE['Chase']:
+			self.stateFlag = DrawingGenerics.GHOST_STATE['Scatter']
+		elif self.stateFlag == DrawingGenerics.GHOST_STATE['Scatter']:
+			self.stateFlag = DrawingGenerics.GHOST_STATE['Chase']
+		
+		# print (self.origColor, self.state, self.stateFlag)
+		
+	def returnToNormalState(self):
+		if self.stateFlag == DrawingGenerics.GHOST_STATE['Scatter']:
+			self.scatter()
+		elif self.stateFlag == DrawingGenerics.GHOST_STATE['Chase']:
+			self.chase()
+		
+## One iteration for the next ghost move				
+	def process(self):
+		#Decrement frightCycles if time remains in fright mode
+		
+		# if self.stateFlag == self.state:
+				
+		if self.toggleChaseScatter > 0:
+			self.toggleChaseScatter -= 1
+		else:
+			self.toggleState()
+			self.toggleChaseScatter = self.toggleChaseScatterCycle
+		# else:
+			# pass
+		
+		
+		if self.state == DrawingGenerics.GHOST_STATE['Chase']:
+			# if self.toggleChaseScatter > 0:
+				# self.toggleChaseScatter -= 1
+			self.chase()
+			# else:
+				# self.toggleState()
+				# self.toggleChaseScatter = 6 * DrawingGenerics.CYCLES_PER_SECOND
+		elif self.state == DrawingGenerics.GHOST_STATE['Scatter']:
+			# if self.toggleChaseScatter > 0:
+				# self.toggleChaseScatter -= 1
+			self.scatter()
+			# else:
+				# self.toggleState()
+				# self.toggleChaseScatter = 6 * DrawingGenerics.CYCLES_PER_SECOND
+		elif self.state == DrawingGenerics.GHOST_STATE['Fright']:
+			if self.frightCycles > 0:
+				if self.frightCycles <= 2 * DrawingGenerics.CYCLES_PER_SECOND:
+					if self.frightCycles % (DrawingGenerics.CYCLES_PER_SECOND / 4) == 0:
+						self.toggleColor()
+				self.frightCycles -= 1
+			else:
+				self.reverseDirection()
+				self.returnToNormalState()
+
+		else:
+			self.returnToPen()
+			# print (self.origColor, self.state)
+			#print (self.xCenter, self.yCenter, self.destX, self.destY)
+			if (abs(self.xCenter - (self.destX * DrawingGenerics.TILE_SIZE)) < 1 and
+					abs(self.yCenter - (self.destY * DrawingGenerics.TILE_SIZE)) < 1): # CHANGED SINCE DEMO
+				self.returnToNormalState()
+			# pass
+			
+		# If ghost is in a tunnel, tunnel_speed is applied, then, if that is not the case,
+		# if ghost is in fright mode, then apply speed_fright, otherwise apply normal speed
+		# (A ghost being in a tunnel trumps other factors that affect speed, then fright mode)
+		if self.isInTunnel():
+			self.speed  = self.speedTunnel
+		# elif self.state == 3 or self.state == 4:		
+			# self.speed = self.specs['speed_fright']
+		# else:
+			# self.speed = self.specs['speed']
+		
+		if not self.started:
+			self.checkStartingConditions()
+		else:
+			if not self.movingThroughTunnel():
+				if not self.inCentreOfTile():
+					if self.isPastCentreOfTile() and self.wallAhead():
+						self.correctPosition()
+						self.setNextDirection()
+						self.doMove()
+					# elif self.wallAhead():
+						# self.correctPosition()
+						# self.setNextDirection()
+						# self.doMove()
+					else:
+						self.doMove()
+				
+				# if not self.inCenterOfTile():
+					# self.doMove()
+				else:
+					self.setNextDirection()
+					self.doMove()
+		
+
+## Sets the destination of each ghost based on which state it is in
+## If chase, follow their specific chase algorithms
+## If scatter, send them to their respective corners	
+	def destinationTile(self):
+		self.pacman = self.gameManager.getPacman()
+		destXCenter, destYCenter = self.pacman.inTile()
+		
+		# redXCenter = 0
+		# redYCenter = 0
+
+		if(self.state == DrawingGenerics.GHOST_STATE['Chase']):
+			if(self.origColor == 'red'):	
+				pass
+				# redXCenter, redYCenter = self.inTile()
+				
+			elif(self.origColor == 'pink'):
+				pacDir = self.pacman.currDirection()
+
+				if(pacDir == 'left'):
+					destXCenter = destXCenter - 4
+				if(pacDir == 'right'):
+					destXCenter = destXCenter + 4
+				if(pacDir == 'up'):
+					destXCenter = destXCenter - 4
+					destYCenter = destYCenter - 4
+				if(pacDir == 'down'):
+					destYCenter = destYCenter + 4
+						
+			elif(self.origColor == 'orange'):
+				currX, currY = self.inTile()
+				distance = self.distance(destXCenter, destYCenter, currX, currY)
+				
+				upperBound = math.sqrt(math.pow(8,2) + math.pow(8,2))
+							
+				if (distance <= upperBound):
+					destXCenter = 0.5
+					destYCenter = 34.5
+					
+					
+			else: #(self.color == 'cyan'):
+				pacDir = self.pacman.currDirection()
+				destXCenter, destYCenter = self.pacman.inTile()
+				
+				if(pacDir == 'left'):
+					destXCenter = destXCenter - 2
+				if(pacDir == 'right'):
+					destXCenter = destXCenter + 2
+				if(pacDir == 'up'):
+					destXCenter = destXCenter - 2
+					destYCenter = destYCenter - 2
+				if(pacDir == 'down'):
+					destYCenter = destYCenter + 2
+				
+				# Get the red ghost's tile coordinates
+				redXCenter, redYCenter = self.gameManager.getGhosts()[3].inTile()
+				
+				destXCenter = redXCenter + 2 * (destXCenter - redXCenter)
+				destYCenter = redYCenter + 2 * (destYCenter - redYCenter)
+			
+		
+		elif(self.state == DrawingGenerics.GHOST_STATE['Scatter']):
+			if(self.origColor == 'red'):
+				destXCenter = 25.5
+				destYCenter = 0.5
+			
+			elif(self.origColor == 'pink'):
+				destXCenter = 2.5
+				destYCenter = 0.5
+			
+			elif(self.origColor == 'orange'):
+				destXCenter = 0.5
+				destYCenter = 34.5
+				
+			else:
+				destXCenter = 27.5
+				destYCenter = 34.5
+		
+		elif(self.state == DrawingGenerics.GHOST_STATE['Eaten']):
+			
+			destXCenter = 14
+			destYCenter = 14.5
+				
+		return destXCenter,destYCenter					
+
+		
+## Sets the next direction the ghost can and will travel to
+	def setNextDirection(self):
+		
+		dirDict = { 'left': 1, 'right': 2, 'up': 3, 'down': 4 }
+		
+		mapWalls = self.gameManager.getWalls()
+		destX = self.destX
+		destY = self.destY
+		
+		for wall in mapWalls:
+			# Check left for a wall
+			if self.findOverlappingWith(self.xCenter - DrawingGenerics.TILE_SIZE,
+							self.yTop,
+							self.xCenter - DrawingGenerics.TILE_SIZE,
+							self.yBottom,
+							wall):
+				if dirDict.has_key('left'):
+					del dirDict['left']
+			# Check right for a wall
+			if self.findOverlappingWith(self.xCenter + DrawingGenerics.TILE_SIZE,
+							self.yTop,
+							self.xCenter + DrawingGenerics.TILE_SIZE,
+							self.yBottom,
+							wall):
+				if dirDict.has_key('right'):
+					del dirDict['right']
+			# Check up for a wall
+			if self.findOverlappingWith(self.xLeft,
+							self.yCenter - DrawingGenerics.TILE_SIZE,
+							self.xRight,
+							self.yCenter - DrawingGenerics.TILE_SIZE,
+							wall):
+				if dirDict.has_key('up'):
+					del dirDict['up']
+			# Check down for a wall
+			if self.findOverlappingWith(self.xLeft,
+							self.yCenter + DrawingGenerics.TILE_SIZE,
+							self.xRight,
+							self.yCenter + DrawingGenerics.TILE_SIZE,
+							wall):
+				if dirDict.has_key('down'):
+					del dirDict['down']
+							
+		if self.left:
+			if dirDict.has_key('right'):
+				del dirDict['right']
+				
+		if self.right:
+			if dirDict.has_key('left'):
+				del dirDict['left']
+		
+		if self.up:
+			if dirDict.has_key('down'):
+				del dirDict['down']
+		
+		if self.down:
+			if dirDict.has_key('up'):
+				del dirDict['up']
+	
+		nextDir = 1
+		nextDirection = 'down'
+		if (len(dirDict) > 0):
+			if not (self.state == DrawingGenerics.GHOST_STATE['Fright']):
+				nextDirection = self.shortestDistance(dirDict, destX, destY)
+			else:
+				nextDir = random.randint(1, len(dirDict))
+				nextDirection = dirDict.keys()[nextDir-1]
+		
+		if (nextDirection == 'left'):
+			self.left = True
+			self.right = False
+			self.up = False
+			self.down = False
+			
+		elif (nextDirection == 'right'):
+			self.left = False
+			self.right = True
+			self.up = False
+			self.down = False
+			
+		elif (nextDirection == 'up'):
+			self.left = False
+			self.right = False
+			self.up = True
+			self.down = False
+		
+		else:
+			self.left = False
+			self.right = False
+			self.up = False
+			self.down = True
+			
+## Finding the shortest distance from tiles surrounding the ghost to the destination.
+## Next move of the ghost is determined by which direction it still can travel to 
+## (no walls/obstructions)	and if that is closest to the destination tile (shortest vector)
+## Returns the next direction the ghost should travel based on this.
+	def shortestDistance(self, dirDict, destX, destY):
+		
+		xCenter, yCenter = self.inTile()
+		
+		distance = sys.maxint
+		nextTile = DrawingGenerics.TILE_SIZE
+		
+		#nextDir = 'left'
+		
+		if(dirDict.has_key('left')):
+			distL = self.distance(xCenter - 1, yCenter, destX, destY)
+				
+			if(distL < distance):
+				distance = distL
+				nextDir = 'left'
+				
+		if(dirDict.has_key('up')):
+			distU = self.distance(xCenter, yCenter - 1, destX, destY)
+				
+			if(distU < distance):
+				distance = distU
+				nextDir = 'up'
+				
+		if(dirDict.has_key('right')):
+			distR = self.distance(xCenter + 1, yCenter, destX, destY)	
+				
+			if(distR < distance):
+				distance = distR
+				nextDir = 'right'
+			
+		if(dirDict.has_key('down')):
+			distD = self.distance(xCenter , yCenter + 1, destX, destY)
+					
+			if(distD < distance):
+				distance = distD
+				nextDir = 'down'
+		
+		return nextDir
+				
+			
+## Helper method to find the distance between center two points			
+	def distance(self, x1, y1, x2, y2):
+				
+		return math.sqrt(math.pow((x2-x1),2) + math.pow((y2-y1),2))
+	
+	

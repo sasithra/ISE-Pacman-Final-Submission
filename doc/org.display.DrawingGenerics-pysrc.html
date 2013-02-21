@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>org.display.DrawingGenerics</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="org-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="org-module.html">Package&nbsp;org</a> ::
+        <a href="org.display-module.html">Package&nbsp;display</a> ::
+        Module&nbsp;DrawingGenerics
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="org.display.DrawingGenerics-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="org.display.DrawingGenerics-module.html">Module org.display.DrawingGenerics</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-docstring">Drawing Generics class.</tt> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-docstring">This class contains the generic variables and units of measurements of all the </tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-docstring">Pacman Canvas items in the game.</tt> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"><tt class="py-docstring">@author: Jason Cohen</tt> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"><tt class="py-docstring">@author: Shaun Hamelin-Owens</tt> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-docstring">@author: Sasithra Thanabalan</tt> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"><tt class="py-docstring">@author: Andrew Walker</tt> </tt>
+<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"><tt class="py-comment">#--------------------------------------------------------------------------------</tt> </tt>
+<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line"><tt class="py-comment"># Generic game specifications for the game frame only</tt> </tt>
+<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line"><tt class="py-comment">#--------------------------------------------------------------------------------</tt> </tt>
+<a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line"> </tt>
+<a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line"><tt id="link-0" class="py-name" targets="Variable org.display.DrawingGenerics.PIXEL=org.display.DrawingGenerics-module.html#PIXEL"><a title="org.display.DrawingGenerics.PIXEL" class="py-name" href="#" onclick="return doclink('link-0', 'PIXEL', 'link-0');">PIXEL</a></tt> <tt class="py-op">=</tt> <tt class="py-number">2</tt> </tt>
+<a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line"><tt id="link-1" class="py-name" targets="Variable org.display.DrawingGenerics.TILE_SIZE=org.display.DrawingGenerics-module.html#TILE_SIZE"><a title="org.display.DrawingGenerics.TILE_SIZE" class="py-name" href="#" onclick="return doclink('link-1', 'TILE_SIZE', 'link-1');">TILE_SIZE</a></tt> <tt class="py-op">=</tt> <tt class="py-number">8</tt> <tt class="py-op">*</tt> <tt id="link-2" class="py-name"><a title="org.display.DrawingGenerics.PIXEL" class="py-name" href="#" onclick="return doclink('link-2', 'PIXEL', 'link-0');">PIXEL</a></tt> </tt>
+<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line"><tt id="link-3" class="py-name" targets="Variable org.display.DrawingGenerics.TILE_CENTERING=org.display.DrawingGenerics-module.html#TILE_CENTERING"><a title="org.display.DrawingGenerics.TILE_CENTERING" class="py-name" href="#" onclick="return doclink('link-3', 'TILE_CENTERING', 'link-3');">TILE_CENTERING</a></tt> <tt class="py-op">=</tt> <tt id="link-4" class="py-name"><a title="org.display.DrawingGenerics.TILE_SIZE" class="py-name" href="#" onclick="return doclink('link-4', 'TILE_SIZE', 'link-1');">TILE_SIZE</a></tt> <tt class="py-op">/</tt> <tt class="py-number">2</tt> </tt>
+<a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line"><tt id="link-5" class="py-name" targets="Variable org.display.DrawingGenerics.MAP_WIDTH_UNITS=org.display.DrawingGenerics-module.html#MAP_WIDTH_UNITS"><a title="org.display.DrawingGenerics.MAP_WIDTH_UNITS" class="py-name" href="#" onclick="return doclink('link-5', 'MAP_WIDTH_UNITS', 'link-5');">MAP_WIDTH_UNITS</a></tt> <tt class="py-op">=</tt> <tt class="py-number">28</tt> </tt>
+<a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line"><tt id="link-6" class="py-name" targets="Variable org.display.DrawingGenerics.MAP_HEIGHT_UNITS=org.display.DrawingGenerics-module.html#MAP_HEIGHT_UNITS"><a title="org.display.DrawingGenerics.MAP_HEIGHT_UNITS" class="py-name" href="#" onclick="return doclink('link-6', 'MAP_HEIGHT_UNITS', 'link-6');">MAP_HEIGHT_UNITS</a></tt> <tt class="py-op">=</tt> <tt class="py-number">36</tt> </tt>
+<a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line"><tt id="link-7" class="py-name" targets="Variable org.display.DrawingGenerics.MAP_WIDTH=org.display.DrawingGenerics-module.html#MAP_WIDTH"><a title="org.display.DrawingGenerics.MAP_WIDTH" class="py-name" href="#" onclick="return doclink('link-7', 'MAP_WIDTH', 'link-7');">MAP_WIDTH</a></tt> <tt class="py-op">=</tt> <tt id="link-8" class="py-name"><a title="org.display.DrawingGenerics.TILE_SIZE" class="py-name" href="#" onclick="return doclink('link-8', 'TILE_SIZE', 'link-1');">TILE_SIZE</a></tt> <tt class="py-op">*</tt> <tt id="link-9" class="py-name"><a title="org.display.DrawingGenerics.MAP_WIDTH_UNITS" class="py-name" href="#" onclick="return doclink('link-9', 'MAP_WIDTH_UNITS', 'link-5');">MAP_WIDTH_UNITS</a></tt> </tt>
+<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line"><tt id="link-10" class="py-name" targets="Variable org.display.DrawingGenerics.MAP_HEIGHT=org.display.DrawingGenerics-module.html#MAP_HEIGHT"><a title="org.display.DrawingGenerics.MAP_HEIGHT" class="py-name" href="#" onclick="return doclink('link-10', 'MAP_HEIGHT', 'link-10');">MAP_HEIGHT</a></tt> <tt class="py-op">=</tt> <tt id="link-11" class="py-name"><a title="org.display.DrawingGenerics.TILE_SIZE" class="py-name" href="#" onclick="return doclink('link-11', 'TILE_SIZE', 'link-1');">TILE_SIZE</a></tt> <tt class="py-op">*</tt> <tt id="link-12" class="py-name"><a title="org.display.DrawingGenerics.MAP_HEIGHT_UNITS" class="py-name" href="#" onclick="return doclink('link-12', 'MAP_HEIGHT_UNITS', 'link-6');">MAP_HEIGHT_UNITS</a></tt> </tt>
+<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line"> </tt>
+<a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line"><tt class="py-comment">#--------------------------------------------------------------------------------</tt> </tt>
+<a name="L25"></a><tt class="py-lineno">25</tt>  <tt class="py-line"><tt class="py-comment"># Screen refresh rate (in milliseconds) ~ 60 frames/second and timing</tt> </tt>
+<a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line"><tt class="py-comment">#--------------------------------------------------------------------------------</tt> </tt>
+<a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line"><tt id="link-13" class="py-name" targets="Variable org.display.DrawingGenerics.REFRESH_RATE=org.display.DrawingGenerics-module.html#REFRESH_RATE"><a title="org.display.DrawingGenerics.REFRESH_RATE" class="py-name" href="#" onclick="return doclink('link-13', 'REFRESH_RATE', 'link-13');">REFRESH_RATE</a></tt> <tt class="py-op">=</tt> <tt class="py-number">12</tt> </tt>
+<a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line"><tt id="link-14" class="py-name" targets="Variable org.display.DrawingGenerics.CYCLES_PER_SECOND=org.display.DrawingGenerics-module.html#CYCLES_PER_SECOND"><a title="org.display.DrawingGenerics.CYCLES_PER_SECOND" class="py-name" href="#" onclick="return doclink('link-14', 'CYCLES_PER_SECOND', 'link-14');">CYCLES_PER_SECOND</a></tt> <tt class="py-op">=</tt> <tt id="link-15" class="py-name" targets="Class int=int-class.html"><a title="int" class="py-name" href="#" onclick="return doclink('link-15', 'int', 'link-15');">int</a></tt><tt class="py-op">(</tt><tt class="py-number">1000</tt> <tt class="py-op">/</tt> <tt id="link-16" class="py-name"><a title="org.display.DrawingGenerics.REFRESH_RATE" class="py-name" href="#" onclick="return doclink('link-16', 'REFRESH_RATE', 'link-13');">REFRESH_RATE</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line"> </tt>
+<a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line"><tt class="py-comment">#--------------------------------------------------------------------------------</tt> </tt>
+<a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line"><tt class="py-comment"># For the drawn wall, not the specification wall used in game logic</tt> </tt>
+<a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line"><tt class="py-comment">#--------------------------------------------------------------------------------</tt> </tt>
+<a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line"><tt id="link-17" class="py-name" targets="Variable org.display.DrawingGenerics.OUTER_WALL_WIDTH=org.display.DrawingGenerics-module.html#OUTER_WALL_WIDTH"><a title="org.display.DrawingGenerics.OUTER_WALL_WIDTH" class="py-name" href="#" onclick="return doclink('link-17', 'OUTER_WALL_WIDTH', 'link-17');">OUTER_WALL_WIDTH</a></tt> <tt class="py-op">=</tt> <tt id="link-18" class="py-name"><a title="org.display.DrawingGenerics.TILE_SIZE" class="py-name" href="#" onclick="return doclink('link-18', 'TILE_SIZE', 'link-1');">TILE_SIZE</a></tt> <tt class="py-op">/</tt> <tt class="py-number">2</tt> </tt>
+<a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line"> </tt>
+<a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line"><tt class="py-comment">#--------------------------------------------------------------------------------</tt> </tt>
+<a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line"><tt class="py-comment"># Ghost modes of operation (states)</tt> </tt>
+<a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line"><tt class="py-comment">#--------------------------------------------------------------------------------</tt> </tt>
+<a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line"><tt id="link-19" class="py-name" targets="Variable org.display.DrawingGenerics.GHOST_STATE=org.display.DrawingGenerics-module.html#GHOST_STATE"><a title="org.display.DrawingGenerics.GHOST_STATE" class="py-name" href="#" onclick="return doclink('link-19', 'GHOST_STATE', 'link-19');">GHOST_STATE</a></tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt><tt class="py-string">'Chase'</tt><tt class="py-op">:</tt> <tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-string">'Scatter'</tt><tt class="py-op">:</tt> <tt class="py-number">2</tt><tt class="py-op">,</tt><tt class="py-string">'Fright'</tt><tt class="py-op">:</tt> <tt class="py-number">3</tt><tt class="py-op">,</tt> <tt class="py-string">'Eaten'</tt><tt class="py-op">:</tt> <tt class="py-number">4</tt><tt class="py-op">}</tt> </tt>
+<a name="L39"></a><tt class="py-lineno">39</tt>  <tt class="py-line"> </tt>
+<a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line"><tt class="py-comment">#--------------------------------------------------------------------------------</tt> </tt>
+<a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line"><tt class="py-comment"># Pacman modes of operation (states)</tt> </tt>
+<a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line"><tt class="py-comment">#--------------------------------------------------------------------------------</tt> </tt>
+<a name="L43"></a><tt class="py-lineno">43</tt>  <tt class="py-line"><tt id="link-20" class="py-name" targets="Variable org.display.DrawingGenerics.PACMAN_STATE=org.display.DrawingGenerics-module.html#PACMAN_STATE"><a title="org.display.DrawingGenerics.PACMAN_STATE" class="py-name" href="#" onclick="return doclink('link-20', 'PACMAN_STATE', 'link-20');">PACMAN_STATE</a></tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt><tt class="py-string">'Normal'</tt><tt class="py-op">:</tt> <tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-string">'Energized'</tt><tt class="py-op">:</tt> <tt class="py-number">2</tt><tt class="py-op">}</tt> </tt>
+<a name="L44"></a><tt class="py-lineno">44</tt>  <tt class="py-line"><tt id="link-21" class="py-name" targets="Variable org.display.DrawingGenerics.PACMAN_RADIUS=org.display.DrawingGenerics-module.html#PACMAN_RADIUS"><a title="org.display.DrawingGenerics.PACMAN_RADIUS" class="py-name" href="#" onclick="return doclink('link-21', 'PACMAN_RADIUS', 'link-21');">PACMAN_RADIUS</a></tt> <tt class="py-op">=</tt> <tt class="py-number">6</tt> <tt class="py-op">*</tt> <tt id="link-22" class="py-name"><a title="org.display.DrawingGenerics.TILE_SIZE" class="py-name" href="#" onclick="return doclink('link-22', 'TILE_SIZE', 'link-1');">TILE_SIZE</a></tt> <tt class="py-op">/</tt> <tt class="py-number">8</tt> </tt>
+<a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line"><tt id="link-23" class="py-name" targets="Variable org.display.DrawingGenerics.GHOST_RADIUS=org.display.DrawingGenerics-module.html#GHOST_RADIUS"><a title="org.display.DrawingGenerics.GHOST_RADIUS" class="py-name" href="#" onclick="return doclink('link-23', 'GHOST_RADIUS', 'link-23');">GHOST_RADIUS</a></tt> <tt class="py-op">=</tt> <tt class="py-number">6</tt> <tt class="py-op">*</tt> <tt id="link-24" class="py-name"><a title="org.display.DrawingGenerics.TILE_SIZE" class="py-name" href="#" onclick="return doclink('link-24', 'TILE_SIZE', 'link-1');">TILE_SIZE</a></tt> <tt class="py-op">/</tt> <tt class="py-number">8</tt> </tt>
+<a name="L46"></a><tt class="py-lineno">46</tt>  <tt class="py-line"><tt id="link-25" class="py-name" targets="Variable org.display.DrawingGenerics.DOT_RADIUS=org.display.DrawingGenerics-module.html#DOT_RADIUS"><a title="org.display.DrawingGenerics.DOT_RADIUS" class="py-name" href="#" onclick="return doclink('link-25', 'DOT_RADIUS', 'link-25');">DOT_RADIUS</a></tt> <tt class="py-op">=</tt> <tt id="link-26" class="py-name"><a title="org.display.DrawingGenerics.TILE_SIZE" class="py-name" href="#" onclick="return doclink('link-26', 'TILE_SIZE', 'link-1');">TILE_SIZE</a></tt> <tt class="py-op">/</tt> <tt class="py-number">8</tt> </tt>
+<a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line"><tt id="link-27" class="py-name" targets="Variable org.display.DrawingGenerics.ENERGIZER_RADIUS=org.display.DrawingGenerics-module.html#ENERGIZER_RADIUS"><a title="org.display.DrawingGenerics.ENERGIZER_RADIUS" class="py-name" href="#" onclick="return doclink('link-27', 'ENERGIZER_RADIUS', 'link-27');">ENERGIZER_RADIUS</a></tt> <tt class="py-op">=</tt> <tt id="link-28" class="py-name"><a title="org.display.DrawingGenerics.TILE_SIZE" class="py-name" href="#" onclick="return doclink('link-28', 'TILE_SIZE', 'link-1');">TILE_SIZE</a></tt> <tt class="py-op">/</tt> <tt class="py-number">2</tt> </tt>
+<a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line"><tt id="link-29" class="py-name" targets="Variable org.display.DrawingGenerics.BONUS_RADIUS=org.display.DrawingGenerics-module.html#BONUS_RADIUS"><a title="org.display.DrawingGenerics.BONUS_RADIUS" class="py-name" href="#" onclick="return doclink('link-29', 'BONUS_RADIUS', 'link-29');">BONUS_RADIUS</a></tt> <tt class="py-op">=</tt> <tt id="link-30" class="py-name"><a title="org.display.DrawingGenerics.ENERGIZER_RADIUS" class="py-name" href="#" onclick="return doclink('link-30', 'ENERGIZER_RADIUS', 'link-27');">ENERGIZER_RADIUS</a></tt> </tt>
+<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line"> </tt>
+<a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line"><tt class="py-comment">#--------------------------------------------------------------------------------</tt> </tt>
+<a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line"><tt class="py-comment"># Defines the shape of each Game Canvas item.</tt> </tt>
+<a name="L52"></a><tt class="py-lineno">52</tt>  <tt class="py-line"><tt class="py-comment">#--------------------------------------------------------------------------------</tt> </tt>
+<a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line"><tt id="link-31" class="py-name" targets="Variable org.display.DrawingGenerics.WALL_SHAPE=org.display.DrawingGenerics-module.html#WALL_SHAPE"><a title="org.display.DrawingGenerics.WALL_SHAPE" class="py-name" href="#" onclick="return doclink('link-31', 'WALL_SHAPE', 'link-31');">WALL_SHAPE</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"rectangle"</tt> </tt>
+<a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line"><tt id="link-32" class="py-name" targets="Variable org.display.DrawingGenerics.PACMAN_SHAPE=org.display.DrawingGenerics-module.html#PACMAN_SHAPE"><a title="org.display.DrawingGenerics.PACMAN_SHAPE" class="py-name" href="#" onclick="return doclink('link-32', 'PACMAN_SHAPE', 'link-32');">PACMAN_SHAPE</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"oval"</tt> </tt>
+<a name="L55"></a><tt class="py-lineno">55</tt>  <tt class="py-line"><tt id="link-33" class="py-name" targets="Variable org.display.DrawingGenerics.GHOST_SHAPE=org.display.DrawingGenerics-module.html#GHOST_SHAPE"><a title="org.display.DrawingGenerics.GHOST_SHAPE" class="py-name" href="#" onclick="return doclink('link-33', 'GHOST_SHAPE', 'link-33');">GHOST_SHAPE</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"rectangle"</tt> </tt>
+<a name="L56"></a><tt class="py-lineno">56</tt>  <tt class="py-line"><tt id="link-34" class="py-name" targets="Variable org.display.DrawingGenerics.DOT_SHAPE=org.display.DrawingGenerics-module.html#DOT_SHAPE"><a title="org.display.DrawingGenerics.DOT_SHAPE" class="py-name" href="#" onclick="return doclink('link-34', 'DOT_SHAPE', 'link-34');">DOT_SHAPE</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"oval"</tt> </tt>
+<a name="L57"></a><tt class="py-lineno">57</tt>  <tt class="py-line"><tt id="link-35" class="py-name" targets="Variable org.display.DrawingGenerics.ENERGIZER_SHAPE=org.display.DrawingGenerics-module.html#ENERGIZER_SHAPE"><a title="org.display.DrawingGenerics.ENERGIZER_SHAPE" class="py-name" href="#" onclick="return doclink('link-35', 'ENERGIZER_SHAPE', 'link-35');">ENERGIZER_SHAPE</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"oval"</tt> </tt>
+<a name="L58"></a><tt class="py-lineno">58</tt>  <tt class="py-line"><tt id="link-36" class="py-name" targets="Variable org.display.DrawingGenerics.BONUS_SHAPE=org.display.DrawingGenerics-module.html#BONUS_SHAPE"><a title="org.display.DrawingGenerics.BONUS_SHAPE" class="py-name" href="#" onclick="return doclink('link-36', 'BONUS_SHAPE', 'link-36');">BONUS_SHAPE</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"oval"</tt> </tt>
+<a name="L59"></a><tt class="py-lineno">59</tt>  <tt class="py-line"> </tt>
+<a name="L60"></a><tt class="py-lineno">60</tt>  <tt class="py-line"><tt class="py-comment">#--------------------------------------------------------------------------------</tt> </tt>
+<a name="L61"></a><tt class="py-lineno">61</tt>  <tt class="py-line"><tt class="py-comment"># Defines of all the game items with their respective characteristics </tt> </tt>
+<a name="L62"></a><tt class="py-lineno">62</tt>  <tt class="py-line"><tt class="py-comment"># (color, key etc.) and states of game characters.</tt> </tt>
+<a name="L63"></a><tt class="py-lineno">63</tt>  <tt class="py-line"><tt class="py-comment">#--------------------------------------------------------------------------------</tt> </tt>
+<a name="L64"></a><tt class="py-lineno">64</tt>  <tt class="py-line"><tt id="link-37" class="py-name" targets="Variable org.display.DrawingGenerics.WALL_OUTLINE=org.display.DrawingGenerics-module.html#WALL_OUTLINE"><a title="org.display.DrawingGenerics.WALL_OUTLINE" class="py-name" href="#" onclick="return doclink('link-37', 'WALL_OUTLINE', 'link-37');">WALL_OUTLINE</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"blue"</tt> </tt>
+<a name="L65"></a><tt class="py-lineno">65</tt>  <tt class="py-line"><tt id="link-38" class="py-name" targets="Variable org.display.DrawingGenerics.DOOR_COLOR=org.display.DrawingGenerics-module.html#DOOR_COLOR"><a title="org.display.DrawingGenerics.DOOR_COLOR" class="py-name" href="#" onclick="return doclink('link-38', 'DOOR_COLOR', 'link-38');">DOOR_COLOR</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"grey"</tt> </tt>
+<a name="L66"></a><tt class="py-lineno">66</tt>  <tt class="py-line"><tt id="link-39" class="py-name" targets="Variable org.display.DrawingGenerics.PACMAN_COLOR=org.display.DrawingGenerics-module.html#PACMAN_COLOR"><a title="org.display.DrawingGenerics.PACMAN_COLOR" class="py-name" href="#" onclick="return doclink('link-39', 'PACMAN_COLOR', 'link-39');">PACMAN_COLOR</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"yellow"</tt>  </tt>
+<a name="L67"></a><tt class="py-lineno">67</tt>  <tt class="py-line"><tt id="link-40" class="py-name" targets="Variable org.display.DrawingGenerics.GHOST_COLOR=org.display.DrawingGenerics-module.html#GHOST_COLOR"><a title="org.display.DrawingGenerics.GHOST_COLOR" class="py-name" href="#" onclick="return doclink('link-40', 'GHOST_COLOR', 'link-40');">GHOST_COLOR</a></tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt><tt class="py-number">1</tt><tt class="py-op">:</tt> <tt class="py-string">"cyan"</tt><tt class="py-op">,</tt> <tt class="py-number">2</tt><tt class="py-op">:</tt> <tt class="py-string">"pink"</tt><tt class="py-op">,</tt> <tt class="py-number">3</tt><tt class="py-op">:</tt> <tt class="py-string">"orange"</tt><tt class="py-op">,</tt> <tt class="py-number">4</tt><tt class="py-op">:</tt> <tt class="py-string">"red"</tt><tt class="py-op">}</tt> </tt>
+<a name="L68"></a><tt class="py-lineno">68</tt>  <tt class="py-line"><tt id="link-41" class="py-name" targets="Variable org.display.DrawingGenerics.GHOST_FRIGHT_COLOR=org.display.DrawingGenerics-module.html#GHOST_FRIGHT_COLOR"><a title="org.display.DrawingGenerics.GHOST_FRIGHT_COLOR" class="py-name" href="#" onclick="return doclink('link-41', 'GHOST_FRIGHT_COLOR', 'link-41');">GHOST_FRIGHT_COLOR</a></tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt><tt class="py-number">1</tt><tt class="py-op">:</tt> <tt class="py-string">"blue"</tt><tt class="py-op">,</tt> <tt class="py-number">2</tt><tt class="py-op">:</tt> <tt class="py-string">"white"</tt><tt class="py-op">}</tt> </tt>
+<a name="L69"></a><tt class="py-lineno">69</tt>  <tt class="py-line"><tt id="link-42" class="py-name" targets="Variable org.display.DrawingGenerics.DOT_COLOR=org.display.DrawingGenerics-module.html#DOT_COLOR"><a title="org.display.DrawingGenerics.DOT_COLOR" class="py-name" href="#" onclick="return doclink('link-42', 'DOT_COLOR', 'link-42');">DOT_COLOR</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"white"</tt> </tt>
+<a name="L70"></a><tt class="py-lineno">70</tt>  <tt class="py-line"><tt id="link-43" class="py-name" targets="Variable org.display.DrawingGenerics.ENERGIZER_COLOR=org.display.DrawingGenerics-module.html#ENERGIZER_COLOR"><a title="org.display.DrawingGenerics.ENERGIZER_COLOR" class="py-name" href="#" onclick="return doclink('link-43', 'ENERGIZER_COLOR', 'link-43');">ENERGIZER_COLOR</a></tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt><tt class="py-number">1</tt><tt class="py-op">:</tt> <tt class="py-string">"white"</tt><tt class="py-op">,</tt> <tt class="py-number">2</tt><tt class="py-op">:</tt> <tt class="py-string">"black"</tt><tt class="py-op">}</tt> </tt>
+<a name="L71"></a><tt class="py-lineno">71</tt>  <tt class="py-line"><tt id="link-44" class="py-name" targets="Variable org.display.DrawingGenerics.BONUS_COLOR=org.display.DrawingGenerics-module.html#BONUS_COLOR"><a title="org.display.DrawingGenerics.BONUS_COLOR" class="py-name" href="#" onclick="return doclink('link-44', 'BONUS_COLOR', 'link-44');">BONUS_COLOR</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"red"</tt> </tt>
+<a name="L72"></a><tt class="py-lineno">72</tt>  <tt class="py-line"> </tt>
+<a name="L73"></a><tt class="py-lineno">73</tt>  <tt class="py-line"><tt class="py-comment">#--------------------------------------------------------------------------------</tt> </tt>
+<a name="L74"></a><tt class="py-lineno">74</tt>  <tt class="py-line"><tt class="py-comment">## Defines of all the character and game item tags.</tt> </tt>
+<a name="L75"></a><tt class="py-lineno">75</tt>  <tt class="py-line"><tt class="py-comment">#--------------------------------------------------------------------------------</tt> </tt>
+<a name="L76"></a><tt class="py-lineno">76</tt>  <tt class="py-line"><tt id="link-45" class="py-name" targets="Variable org.display.DrawingGenerics.TAG_GHOST=org.display.DrawingGenerics-module.html#TAG_GHOST"><a title="org.display.DrawingGenerics.TAG_GHOST" class="py-name" href="#" onclick="return doclink('link-45', 'TAG_GHOST', 'link-45');">TAG_GHOST</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"Ghost"</tt> </tt>
+<a name="L77"></a><tt class="py-lineno">77</tt>  <tt class="py-line"><tt id="link-46" class="py-name" targets="Variable org.display.DrawingGenerics.TAG_PACMAN=org.display.DrawingGenerics-module.html#TAG_PACMAN"><a title="org.display.DrawingGenerics.TAG_PACMAN" class="py-name" href="#" onclick="return doclink('link-46', 'TAG_PACMAN', 'link-46');">TAG_PACMAN</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"Pacman"</tt> </tt>
+<a name="L78"></a><tt class="py-lineno">78</tt>  <tt class="py-line"><tt id="link-47" class="py-name" targets="Variable org.display.DrawingGenerics.TAG_WALL=org.display.DrawingGenerics-module.html#TAG_WALL"><a title="org.display.DrawingGenerics.TAG_WALL" class="py-name" href="#" onclick="return doclink('link-47', 'TAG_WALL', 'link-47');">TAG_WALL</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"Wall"</tt> </tt>
+<a name="L79"></a><tt class="py-lineno">79</tt>  <tt class="py-line"><tt id="link-48" class="py-name" targets="Variable org.display.DrawingGenerics.TAG_DOOR=org.display.DrawingGenerics-module.html#TAG_DOOR"><a title="org.display.DrawingGenerics.TAG_DOOR" class="py-name" href="#" onclick="return doclink('link-48', 'TAG_DOOR', 'link-48');">TAG_DOOR</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"Door"</tt> </tt>
+<a name="L80"></a><tt class="py-lineno">80</tt>  <tt class="py-line"><tt id="link-49" class="py-name" targets="Variable org.display.DrawingGenerics.TAG_DOT=org.display.DrawingGenerics-module.html#TAG_DOT"><a title="org.display.DrawingGenerics.TAG_DOT" class="py-name" href="#" onclick="return doclink('link-49', 'TAG_DOT', 'link-49');">TAG_DOT</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"Dot"</tt> </tt>
+<a name="L81"></a><tt class="py-lineno">81</tt>  <tt class="py-line"><tt id="link-50" class="py-name" targets="Variable org.display.DrawingGenerics.TAG_ENERGIZER=org.display.DrawingGenerics-module.html#TAG_ENERGIZER"><a title="org.display.DrawingGenerics.TAG_ENERGIZER" class="py-name" href="#" onclick="return doclink('link-50', 'TAG_ENERGIZER', 'link-50');">TAG_ENERGIZER</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"Energizer"</tt> </tt>
+<a name="L82"></a><tt class="py-lineno">82</tt>  <tt class="py-line"><tt id="link-51" class="py-name" targets="Variable org.display.DrawingGenerics.TAG_BONUS=org.display.DrawingGenerics-module.html#TAG_BONUS"><a title="org.display.DrawingGenerics.TAG_BONUS" class="py-name" href="#" onclick="return doclink('link-51', 'TAG_BONUS', 'link-51');">TAG_BONUS</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"Bonus"</tt> </tt>
+<a name="L83"></a><tt class="py-lineno">83</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="org-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Dec  6 23:58:27 2012
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

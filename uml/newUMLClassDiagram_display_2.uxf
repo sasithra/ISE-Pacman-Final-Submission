@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.5">
+  <zoom_level>11</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>22</x>
+      <y>44</y>
+      <w>154</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Map
+--
++void defineDots()
++list getDots()
++void makeWalls()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>352</x>
+      <y>242</y>
+      <w>121</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>NewUserFrame
+--
+NewFrame</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>176</x>
+      <y>352</y>
+      <w>110</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>tkinter</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>341</x>
+      <y>528</y>
+      <w>143</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>LoginFrame
+--
++void eraseEntry()
+--
+ErrorFrame
+--
+MLoginFrame</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>528</x>
+      <y>352</y>
+      <w>99</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>FrameMaster
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>330</x>
+      <y>66</y>
+      <w>165</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>ForgotFrame
+--
++void setNormal()
++void removeEntry()
+--
+ChangeFrame
+--
+ForgotPassFrame</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>341</x>
+      <y>407</y>
+      <w>143</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>OptionFrame
+--
++void deleteEntry()
+--
+MainOptionFrame</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>253</x>
+      <y>297</y>
+      <w>296</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>33;55;275;55</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>99</x>
+      <y>110</y>
+      <w>140</w>
+      <h>263</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>77;33;77;242</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>462</x>
+      <y>143</y>
+      <w>142</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>33;33;121;209</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>429</x>
+      <y>253</y>
+      <w>139</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>44;33;99;99</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>242</x>
+      <y>253</y>
+      <w>140</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>110;33;44;99</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>209</x>
+      <y>143</y>
+      <w>142</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>121;33;33;209</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>242</x>
+      <y>341</y>
+      <w>139</w>
+      <h>87</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>99;66;44;44</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>429</x>
+      <y>341</y>
+      <w>140</w>
+      <h>87</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>55;66;99;44</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>220</x>
+      <y>352</y>
+      <w>142</w>
+      <h>197</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>121;176;33;33</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>451</x>
+      <y>352</y>
+      <w>139</w>
+      <h>197</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>33;176;110;33</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>341</x>
+      <y>671</y>
+      <w>143</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>MenuFrame
+--
++void setName()
+--
+HighScore
+--
+MainMenuFrame
+--
+InstructionFrame</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>187</x>
+      <y>352</y>
+      <w>175</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>154;319;33;33</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>451</x>
+      <y>352</y>
+      <w>164</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>33;319;143;33</additional_attributes>
+  </element>
+</diagram>

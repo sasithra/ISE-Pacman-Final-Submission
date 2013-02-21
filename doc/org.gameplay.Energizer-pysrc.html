@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>org.gameplay.Energizer</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="org-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="org-module.html">Package&nbsp;org</a> ::
+        <a href="org.gameplay-module.html">Package&nbsp;gameplay</a> ::
+        Module&nbsp;Energizer
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="org.gameplay.Energizer-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="org.gameplay.Energizer-module.html">Module org.gameplay.Energizer</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-docstring">Energizers.</tt> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-docstring">@author: Jason Cohen</tt> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-docstring">@author: Shaun Hamelin-Owens</tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-docstring">@author: Sasithra Thanabalan</tt> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-docstring">@author: Andrew Walker</tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"><tt class="py-comment"># Imports</tt> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-0" class="py-name" targets="Module org.gameplay.PointItem=org.gameplay.PointItem-module.html,Class org.gameplay.PointItem.PointItem=org.gameplay.PointItem.PointItem-class.html"><a title="org.gameplay.PointItem
+org.gameplay.PointItem.PointItem" class="py-name" href="#" onclick="return doclink('link-0', 'PointItem', 'link-0');">PointItem</a></tt> <tt class="py-keyword">import</tt> <tt id="link-1" class="py-name"><a title="org.gameplay.PointItem
+org.gameplay.PointItem.PointItem" class="py-name" href="#" onclick="return doclink('link-1', 'PointItem', 'link-0');">PointItem</a></tt> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-2" class="py-name" targets="Package org.display=org.display-module.html"><a title="org.display" class="py-name" href="#" onclick="return doclink('link-2', 'display', 'link-2');">display</a></tt> <tt class="py-keyword">import</tt> <tt id="link-3" class="py-name" targets="Module org.display.DrawingGenerics=org.display.DrawingGenerics-module.html"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-3', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt> </tt>
+<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line"> </tt>
+<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"><tt class="py-comment"># Constants</tt> </tt>
+<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line"><tt id="link-4" class="py-name" targets="Variable org.gameplay.Energizer.ENERGIZER_POINTS=org.gameplay.Energizer-module.html#ENERGIZER_POINTS"><a title="org.gameplay.Energizer.ENERGIZER_POINTS" class="py-name" href="#" onclick="return doclink('link-4', 'ENERGIZER_POINTS', 'link-4');">ENERGIZER_POINTS</a></tt> <tt class="py-op">=</tt> <tt class="py-number">50</tt> </tt>
+<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line"><tt id="link-5" class="py-name" targets="Variable org.gameplay.Energizer.TOGGLE_TIME=org.gameplay.Energizer-module.html#TOGGLE_TIME"><a title="org.gameplay.Energizer.TOGGLE_TIME" class="py-name" href="#" onclick="return doclink('link-5', 'TOGGLE_TIME', 'link-5');">TOGGLE_TIME</a></tt> <tt class="py-op">=</tt> <tt id="link-6" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-6', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-7" class="py-name" targets="Variable org.display.DrawingGenerics.CYCLES_PER_SECOND=org.display.DrawingGenerics-module.html#CYCLES_PER_SECOND"><a title="org.display.DrawingGenerics.CYCLES_PER_SECOND" class="py-name" href="#" onclick="return doclink('link-7', 'CYCLES_PER_SECOND', 'link-7');">CYCLES_PER_SECOND</a></tt> <tt class="py-op">/</tt> <tt class="py-number">8</tt> </tt>
+<a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line"> </tt>
+<a name="Energizer"></a><div id="Energizer-def"><a name="L16"></a><tt class="py-lineno">16</tt> <a class="py-toggle" href="#" id="Energizer-toggle" onclick="return toggle('Energizer');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="org.gameplay.Energizer.Energizer-class.html">Energizer</a><tt class="py-op">(</tt><tt class="py-base-class">PointItem</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Energizer-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="Energizer-expanded"><a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line"><tt class="py-docstring">        Energizer class.</tt> </tt>
+<a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line"><tt class="py-docstring">        This class contains the methods used in the creation and behaviour of Energizers.</tt> </tt>
+<a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line"><tt class="py-docstring">        It is of the tkinter library and inherits an instance of PointItem.</tt> </tt>
+<a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="Energizer.__init__"></a><div id="Energizer.__init__-def"><a name="L22"></a><tt class="py-lineno">22</tt> <a class="py-toggle" href="#" id="Energizer.__init__-toggle" onclick="return toggle('Energizer.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.gameplay.Energizer.Energizer-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">gameCanvas</tt><tt class="py-op">,</tt> <tt class="py-param">specs</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Energizer.__init__-collapsed" style="display:none;" pad="++" indent="++++++++++++"></div><div id="Energizer.__init__-expanded"><a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line"><tt class="py-docstring">                Initialization.</tt> </tt>
+<a name="L25"></a><tt class="py-lineno">25</tt>  <tt class="py-line"><tt class="py-docstring">                This method creates a new Energizer item, draws it and initializes it.</tt> </tt>
+<a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line"><tt class="py-docstring">                @param gameCanvas: </tt> </tt>
+<a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line"><tt class="py-docstring">                @param specs: Specifies the attributes of this particular Sprite.</tt> </tt>
+<a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line">                <tt class="py-comment"># Initialize Energizer</tt> </tt>
+<a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line">                <tt class="py-name">super</tt><tt class="py-op">(</tt><tt id="link-8" class="py-name" targets="Module org.gameplay.Energizer=org.gameplay.Energizer-module.html,Class org.gameplay.Energizer.Energizer=org.gameplay.Energizer.Energizer-class.html"><a title="org.gameplay.Energizer
+org.gameplay.Energizer.Energizer" class="py-name" href="#" onclick="return doclink('link-8', 'Energizer', 'link-8');">Energizer</a></tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt id="link-9" class="py-name" targets="Method org.Pacman.Account.__init__()=org.Pacman.Account-class.html#__init__,Method org.Pacman.Game.__init__()=org.Pacman.Game-class.html#__init__,Method org.Pacman.Guest.__init__()=org.Pacman.Guest-class.html#__init__,Method org.Pacman.HighScores.__init__()=org.Pacman.HighScores-class.html#__init__,Method org.Pacman.RootConfigure.__init__()=org.Pacman.RootConfigure-class.html#__init__,Method org.Pacman.User.__init__()=org.Pacman.User-class.html#__init__,Method org.db.DbInt.Connection.__init__()=org.db.DbInt.Connection-class.html#__init__,Method org.display.ForgotFrame.ChangeFrame.__init__()=org.display.ForgotFrame.ChangeFrame-class.html#__init__,Method org.display.ForgotFrame.ForgotFrame.__init__()=org.display.ForgotFrame.ForgotFrame-class.html#__init__,Method org.display.ForgotFrame.ForgotPassFrame.__init__()=org.display.ForgotFrame.ForgotPassFrame-class.html#__init__,Method org.display.FrameMaster.BackFrame.__init__()=org.display.FrameMaster.BackFrame-class.html#__init__,Method org.display.FrameMaster.ErrorFrame.__init__()=org.display.FrameMaster.ErrorFrame-class.html#__init__,Method org.display.FrameMaster.FrameMaster.__init__()=org.display.FrameMaster.FrameMaster-class.html#__init__,Method org.display.GameFrame.GameFrame.__init__()=org.display.GameFrame.GameFrame-class.html#__init__,Method org.display.GameFrame.HelpFrame.__init__()=org.display.GameFrame.HelpFrame-class.html#__init__,Method org.display.GameFrame.InfoFrame.__init__()=org.display.GameFrame.InfoFrame-class.html#__init__,Method org.display.GameFrame.LivesFrame.__init__()=org.display.GameFrame.LivesFrame-class.html#__init__,Method org.display.GameFrame.MGameFrame.__init__()=org.display.GameFrame.MGameFrame-class.html#__init__,Method org.display.GameFrame.ScoreFrame.__init__()=org.display.GameFrame.ScoreFrame-class.html#__init__,Method org.display.GameFrame.closeFrame.__init__()=org.display.GameFrame.closeFrame-class.html#__init__,Method org.display.GameFrame.mainFrame.__init__()=org.display.GameFrame.mainFrame-class.html#__init__,Method org.display.LoginFrame.ErrorFrame.__init__()=org.display.LoginFrame.ErrorFrame-class.html#__init__,Method org.display.LoginFrame.LoginFrame.__init__()=org.display.LoginFrame.LoginFrame-class.html#__init__,Method org.display.LoginFrame.MLoginFrame.__init__()=org.display.LoginFrame.MLoginFrame-class.html#__init__,Method org.display.MenuFrame.HighScore.__init__()=org.display.MenuFrame.HighScore-class.html#__init__,Method org.display.MenuFrame.InstructionFrame.__init__()=org.display.MenuFrame.InstructionFrame-class.html#__init__,Method org.display.MenuFrame.MainMenuFrame.__init__()=org.display.MenuFrame.MainMenuFrame-class.html#__init__,Method org.display.MenuFrame.MenuFrame.__init__()=org.display.MenuFrame.MenuFrame-class.html#__init__,Method org.display.NewUserFrame.NewFrame.__init__()=org.display.NewUserFrame.NewFrame-class.html#__init__,Method org.display.NewUserFrame.NewUserFrame.__init__()=org.display.NewUserFrame.NewUserFrame-class.html#__init__,Method org.display.OptionFrame.MainOptionFrame.__init__()=org.display.OptionFrame.MainOptionFrame-class.html#__init__,Method org.display.OptionFrame.OptionFrame.__init__()=org.display.OptionFrame.OptionFrame-class.html#__init__,Method org.gameplay.BonusItem.BonusItem.__init__()=org.gameplay.BonusItem.BonusItem-class.html#__init__,Method org.gameplay.Dot.Dot.__init__()=org.gameplay.Dot.Dot-class.html#__init__,Method org.gameplay.Energizer.Energizer.__init__()=org.gameplay.Energizer.Energizer-class.html#__init__,Method org.gameplay.GameItem.GameItem.__init__()=org.gameplay.GameItem.GameItem-class.html#__init__,Method org.gameplay.Gameplay.GamePlay.__init__()=org.gameplay.Gameplay.GamePlay-class.html#__init__,Method org.gameplay.Ghost.Ghost.__init__()=org.gameplay.Ghost.Ghost-class.html#__init__,Method org.gameplay.Pacman.Pacman.__init__()=org.gameplay.Pacman.Pacman-class.html#__init__,Method org.gameplay.PointItem.PointItem.__init__()=org.gameplay.PointItem.PointItem-class.html#__init__,Method org.gameplay.Sprite.Sprite.__init__()=org.gameplay.Sprite.Sprite-class.html#__init__,Method org.gameplay.Wall.Wall.__init__()=org.gameplay.Wall.Wall-class.html#__init__,Method org.menu.ForgotMenu.ForgotMenu.__init__()=org.menu.ForgotMenu.ForgotMenu-class.html#__init__,Method org.menu.GameMenu.GameMenu.__init__()=org.menu.GameMenu.GameMenu-class.html#__init__,Method org.menu.LoginMenu.LoginMenu.__init__()=org.menu.LoginMenu.LoginMenu-class.html#__init__,Method org.menu.NewUser.NewUserMenu.__init__()=org.menu.NewUser.NewUserMenu-class.html#__init__,Method org.menu.OptionsMenu.OptionMenu.__init__()=org.menu.OptionsMenu.OptionMenu-class.html#__init__"><a title="org.Pacman.Account.__init__
+org.Pacman.Game.__init__
+org.Pacman.Guest.__init__
+org.Pacman.HighScores.__init__
+org.Pacman.RootConfigure.__init__
+org.Pacman.User.__init__
+org.db.DbInt.Connection.__init__
+org.display.ForgotFrame.ChangeFrame.__init__
+org.display.ForgotFrame.ForgotFrame.__init__
+org.display.ForgotFrame.ForgotPassFrame.__init__
+org.display.FrameMaster.BackFrame.__init__
+org.display.FrameMaster.ErrorFrame.__init__
+org.display.FrameMaster.FrameMaster.__init__
+org.display.GameFrame.GameFrame.__init__
+org.display.GameFrame.HelpFrame.__init__
+org.display.GameFrame.InfoFrame.__init__
+org.display.GameFrame.LivesFrame.__init__
+org.display.GameFrame.MGameFrame.__init__
+org.display.GameFrame.ScoreFrame.__init__
+org.display.GameFrame.closeFrame.__init__
+org.display.GameFrame.mainFrame.__init__
+org.display.LoginFrame.ErrorFrame.__init__
+org.display.LoginFrame.LoginFrame.__init__
+org.display.LoginFrame.MLoginFrame.__init__
+org.display.MenuFrame.HighScore.__init__
+org.display.MenuFrame.InstructionFrame.__init__
+org.display.MenuFrame.MainMenuFrame.__init__
+org.display.MenuFrame.MenuFrame.__init__
+org.display.NewUserFrame.NewFrame.__init__
+org.display.NewUserFrame.NewUserFrame.__init__
+org.display.OptionFrame.MainOptionFrame.__init__
+org.display.OptionFrame.OptionFrame.__init__
+org.gameplay.BonusItem.BonusItem.__init__
+org.gameplay.Dot.Dot.__init__
+org.gameplay.Energizer.Energizer.__init__
+org.gameplay.GameItem.GameItem.__init__
+org.gameplay.Gameplay.GamePlay.__init__
+org.gameplay.Ghost.Ghost.__init__
+org.gameplay.Pacman.Pacman.__init__
+org.gameplay.PointItem.PointItem.__init__
+org.gameplay.Sprite.Sprite.__init__
+org.gameplay.Wall.Wall.__init__
+org.menu.ForgotMenu.ForgotMenu.__init__
+org.menu.GameMenu.GameMenu.__init__
+org.menu.LoginMenu.LoginMenu.__init__
+org.menu.NewUser.NewUserMenu.__init__
+org.menu.OptionsMenu.OptionMenu.__init__" class="py-name" href="#" onclick="return doclink('link-9', '__init__', 'link-9');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">gameCanvas</tt><tt class="py-op">,</tt> <tt class="py-name">specs</tt><tt class="py-op">,</tt> <tt class="py-name">specs</tt><tt class="py-op">[</tt><tt class="py-string">'points'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line">                 </tt>
+<a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line">                <tt class="py-comment"># Draw and set the time between each color toggle (blinking speed energizer)</tt> </tt>
+<a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-10" class="py-name" targets="Method org.gameplay.GameItem.GameItem.draw()=org.gameplay.GameItem.GameItem-class.html#draw,Method org.gameplay.Ghost.Ghost.draw()=org.gameplay.Ghost.Ghost-class.html#draw,Method org.gameplay.Pacman.Pacman.draw()=org.gameplay.Pacman.Pacman-class.html#draw,Method org.gameplay.PointItem.PointItem.draw()=org.gameplay.PointItem.PointItem-class.html#draw,Method org.gameplay.Sprite.Sprite.draw()=org.gameplay.Sprite.Sprite-class.html#draw,Method org.gameplay.Wall.Wall.draw()=org.gameplay.Wall.Wall-class.html#draw"><a title="org.gameplay.GameItem.GameItem.draw
+org.gameplay.Ghost.Ghost.draw
+org.gameplay.Pacman.Pacman.draw
+org.gameplay.PointItem.PointItem.draw
+org.gameplay.Sprite.Sprite.draw
+org.gameplay.Wall.Wall.draw" class="py-name" href="#" onclick="return doclink('link-10', 'draw', 'link-10');">draw</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">colorToggleTime</tt> <tt class="py-op">=</tt> <tt id="link-11" class="py-name"><a title="org.gameplay.Energizer.TOGGLE_TIME" class="py-name" href="#" onclick="return doclink('link-11', 'TOGGLE_TIME', 'link-5');">TOGGLE_TIME</a></tt> </tt>
+</div><a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line"> </tt>
+<a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line">        <tt class="py-comment">#------------------------------------------------------------------------------</tt> </tt>
+<a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line">        <tt class="py-comment"># Helper Method: Determines the process that each energizer goes through </tt> </tt>
+<a name="L39"></a><tt class="py-lineno">39</tt>  <tt class="py-line">        <tt class="py-comment"># continuously during gameplay.</tt> </tt>
+<a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line">        <tt class="py-comment">#------------------------------------------------------------------------------</tt> </tt>
+<a name="Energizer.process"></a><div id="Energizer.process-def"><a name="L41"></a><tt class="py-lineno">41</tt> <a class="py-toggle" href="#" id="Energizer.process-toggle" onclick="return toggle('Energizer.process');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.gameplay.Energizer.Energizer-class.html#process">process</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Energizer.process-collapsed" style="display:none;" pad="++" indent="++++++++++++"></div><div id="Energizer.process-expanded"><a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line">                 </tt>
+<a name="L43"></a><tt class="py-lineno">43</tt>  <tt class="py-line">                <tt class="py-comment"># Determines when to toggle the color from white to black (or vice versa)</tt> </tt>
+<a name="L44"></a><tt class="py-lineno">44</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">colorToggleTime</tt> <tt class="py-op">==</tt> <tt class="py-number">0</tt><tt class="py-op">:</tt> </tt>
+<a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line">                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">colorToggleTime</tt> <tt class="py-op">=</tt> <tt id="link-12" class="py-name"><a title="org.gameplay.Energizer.TOGGLE_TIME" class="py-name" href="#" onclick="return doclink('link-12', 'TOGGLE_TIME', 'link-5');">TOGGLE_TIME</a></tt> </tt>
+<a name="L46"></a><tt class="py-lineno">46</tt>  <tt class="py-line">                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name" targets="Method org.gameplay.Energizer.Energizer.toggleColor()=org.gameplay.Energizer.Energizer-class.html#toggleColor,Method org.gameplay.Ghost.Ghost.toggleColor()=org.gameplay.Ghost.Ghost-class.html#toggleColor"><a title="org.gameplay.Energizer.Energizer.toggleColor
+org.gameplay.Ghost.Ghost.toggleColor" class="py-name" href="#" onclick="return doclink('link-13', 'toggleColor', 'link-13');">toggleColor</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line">                <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line">                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">colorToggleTime</tt> <tt class="py-op">-=</tt> <tt class="py-number">1</tt> </tt>
+</div><a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line">                         </tt>
+<a name="Energizer.toggleColor"></a><div id="Energizer.toggleColor-def"><a name="L50"></a><tt class="py-lineno">50</tt> <a class="py-toggle" href="#" id="Energizer.toggleColor-toggle" onclick="return toggle('Energizer.toggleColor');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.gameplay.Energizer.Energizer-class.html#toggleColor">toggleColor</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Energizer.toggleColor-collapsed" style="display:none;" pad="++" indent="++++++++++++"></div><div id="Energizer.toggleColor-expanded"><a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line">                <tt class="py-docstring">"""</tt> </tt>
+<a name="L52"></a><tt class="py-lineno">52</tt>  <tt class="py-line"><tt class="py-docstring">                toggleColor.</tt> </tt>
+<a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line"><tt class="py-docstring">                This method toggles the color from blue to white (or vice versa) of the Energizer.</tt> </tt>
+<a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L55"></a><tt class="py-lineno">55</tt>  <tt class="py-line"><tt class="py-docstring">                """</tt> </tt>
+<a name="L56"></a><tt class="py-lineno">56</tt>  <tt class="py-line">                 </tt>
+<a name="L57"></a><tt class="py-lineno">57</tt>  <tt class="py-line">                <tt class="py-comment"># Toggles the color of the Energizer to make it blink during gameplay.</tt> </tt>
+<a name="L58"></a><tt class="py-lineno">58</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">color</tt> <tt class="py-op">==</tt> <tt id="link-14" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-14', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-15" class="py-name" targets="Variable org.display.DrawingGenerics.ENERGIZER_COLOR=org.display.DrawingGenerics-module.html#ENERGIZER_COLOR"><a title="org.display.DrawingGenerics.ENERGIZER_COLOR" class="py-name" href="#" onclick="return doclink('link-15', 'ENERGIZER_COLOR', 'link-15');">ENERGIZER_COLOR</a></tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">:</tt> </tt>
+<a name="L59"></a><tt class="py-lineno">59</tt>  <tt class="py-line">                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-16" class="py-name" targets="Method org.gameplay.GameItem.GameItem.changeColor()=org.gameplay.GameItem.GameItem-class.html#changeColor"><a title="org.gameplay.GameItem.GameItem.changeColor" class="py-name" href="#" onclick="return doclink('link-16', 'changeColor', 'link-16');">changeColor</a></tt><tt class="py-op">(</tt><tt id="link-17" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-17', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-18" class="py-name"><a title="org.display.DrawingGenerics.ENERGIZER_COLOR" class="py-name" href="#" onclick="return doclink('link-18', 'ENERGIZER_COLOR', 'link-15');">ENERGIZER_COLOR</a></tt><tt class="py-op">[</tt><tt class="py-number">2</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L60"></a><tt class="py-lineno">60</tt>  <tt class="py-line">                <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L61"></a><tt class="py-lineno">61</tt>  <tt class="py-line">                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-19" class="py-name"><a title="org.gameplay.GameItem.GameItem.changeColor" class="py-name" href="#" onclick="return doclink('link-19', 'changeColor', 'link-16');">changeColor</a></tt><tt class="py-op">(</tt><tt id="link-20" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-20', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-21" class="py-name"><a title="org.display.DrawingGenerics.ENERGIZER_COLOR" class="py-name" href="#" onclick="return doclink('link-21', 'ENERGIZER_COLOR', 'link-15');">ENERGIZER_COLOR</a></tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L62"></a><tt class="py-lineno">62</tt>  <tt class="py-line">                         </tt>
+<a name="L63"></a><tt class="py-lineno">63</tt>  <tt class="py-line">         </tt>
+<a name="L64"></a><tt class="py-lineno">64</tt>  <tt class="py-line">        <tt class="py-comment">#------------------------------------------------------------------------------</tt> </tt>
+<a name="L65"></a><tt class="py-lineno">65</tt>  <tt class="py-line">        <tt class="py-comment"># Helper Method: Resets the color of the Energizer.</tt> </tt>
+<a name="L66"></a><tt class="py-lineno">66</tt>  <tt class="py-line">        <tt class="py-comment">#------------------------------------------------------------------------------</tt> </tt>
+<a name="Energizer.resetColor"></a><div id="Energizer.resetColor-def"><a name="L67"></a><tt class="py-lineno">67</tt> <a class="py-toggle" href="#" id="Energizer.resetColor-toggle" onclick="return toggle('Energizer.resetColor');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="org.gameplay.Energizer.Energizer-class.html#resetColor">resetColor</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Energizer.resetColor-collapsed" style="display:none;" pad="++" indent="++++++++++++"></div><div id="Energizer.resetColor-expanded"><a name="L68"></a><tt class="py-lineno">68</tt>  <tt class="py-line">                <tt class="py-comment"># If the color is not right, reset it.</tt> </tt>
+<a name="L69"></a><tt class="py-lineno">69</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">color</tt> <tt class="py-op">!=</tt> <tt id="link-22" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-22', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-23" class="py-name"><a title="org.display.DrawingGenerics.ENERGIZER_COLOR" class="py-name" href="#" onclick="return doclink('link-23', 'ENERGIZER_COLOR', 'link-15');">ENERGIZER_COLOR</a></tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">:</tt> </tt>
+<a name="L70"></a><tt class="py-lineno">70</tt>  <tt class="py-line">                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-24" class="py-name"><a title="org.gameplay.GameItem.GameItem.changeColor" class="py-name" href="#" onclick="return doclink('link-24', 'changeColor', 'link-16');">changeColor</a></tt><tt class="py-op">(</tt><tt id="link-25" class="py-name"><a title="org.display.DrawingGenerics" class="py-name" href="#" onclick="return doclink('link-25', 'DrawingGenerics', 'link-3');">DrawingGenerics</a></tt><tt class="py-op">.</tt><tt id="link-26" class="py-name"><a title="org.display.DrawingGenerics.ENERGIZER_COLOR" class="py-name" href="#" onclick="return doclink('link-26', 'ENERGIZER_COLOR', 'link-15');">ENERGIZER_COLOR</a></tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L71"></a><tt class="py-lineno">71</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="org-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Dec  6 23:58:29 2012
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

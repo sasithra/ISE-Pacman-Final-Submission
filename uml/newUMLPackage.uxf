@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.5.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>10</x>
+      <y>50</y>
+      <w>620</w>
+      <h>540</h>
+    </coordinates>
+    <panel_attributes>Main
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>380</x>
+      <y>90</y>
+      <w>210</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>display
+--
++DrawingGenerics
++ForgotFrame
++FrameMaster
++GameFrame
++LoginFrame
++Map
++MenuFrame
++NewUserFrame
++OptionFrame</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>40</x>
+      <y>100</y>
+      <w>210</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>maps
+--
++MapCoordinator
++Map1
++Map2
++Map3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>40</x>
+      <y>280</y>
+      <w>190</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>db
+--
++DbInt</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>380</x>
+      <y>360</y>
+      <w>210</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>gameplay
+--
++Dot
++Energizer
++GameItem
++Gameplay
++Ghost
++Pacman
++PointItem
++Sprite
++Wall</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>40</x>
+      <y>410</y>
+      <w>190</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>menu
+--
++ForgotMenu
++GameMenu
++LoginMenu
++NewUser
++OptionsMenu</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>200</x>
+      <y>260</y>
+      <w>200</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..2
+m2=0..1</panel_attributes>
+    <additional_attributes>30;170;180;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>510</x>
+      <y>260</y>
+      <w>50</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=0..*</panel_attributes>
+    <additional_attributes>30;30;30;120</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>220</x>
+      <y>200</y>
+      <w>180</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=0..1</panel_attributes>
+    <additional_attributes>30;30;160;160</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>160</x>
+      <y>330</y>
+      <w>50</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=0..1</panel_attributes>
+    <additional_attributes>30;30;30;100</additional_attributes>
+  </element>
+</diagram>

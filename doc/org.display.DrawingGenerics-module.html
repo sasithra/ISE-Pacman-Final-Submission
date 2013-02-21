@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>org.display.DrawingGenerics</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="org-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="org-module.html">Package&nbsp;org</a> ::
+        <a href="org.display-module.html">Package&nbsp;display</a> ::
+        Module&nbsp;DrawingGenerics
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="org.display.DrawingGenerics-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module DrawingGenerics</h1><p class="nomargin-top"><span class="codelink"><a href="org.display.DrawingGenerics-pysrc.html">source&nbsp;code</a></span></p>
+<p>Drawing Generics class. This class contains the generic variables and 
+  units of measurements of all the Pacman Canvas items in the game.</p>
+
+<hr />
+<div class="fields">      <dl><dt>Authors:</dt>
+        <dd>
+          Jason Cohen,
+          Shaun Hamelin-Owens,
+          Sasithra Thanabalan,
+          Andrew Walker
+        </dd>
+      </dl>
+</div><!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Variables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="PIXEL"></a><span class="summary-name">PIXEL</span> = <code title="2">2</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="TILE_SIZE"></a><span class="summary-name">TILE_SIZE</span> = <code title="8* PIXEL">8* PIXEL</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="TILE_CENTERING"></a><span class="summary-name">TILE_CENTERING</span> = <code title="TILE_SIZE/ 2">TILE_SIZE/ 2</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MAP_WIDTH_UNITS"></a><span class="summary-name">MAP_WIDTH_UNITS</span> = <code title="28">28</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MAP_HEIGHT_UNITS"></a><span class="summary-name">MAP_HEIGHT_UNITS</span> = <code title="36">36</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MAP_WIDTH"></a><span class="summary-name">MAP_WIDTH</span> = <code title="TILE_SIZE* MAP_WIDTH_UNITS">TILE_SIZE* MAP_WIDTH_UNITS</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MAP_HEIGHT"></a><span class="summary-name">MAP_HEIGHT</span> = <code title="TILE_SIZE* MAP_HEIGHT_UNITS">TILE_SIZE* MAP_HEIGHT_UNITS</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="REFRESH_RATE"></a><span class="summary-name">REFRESH_RATE</span> = <code title="12">12</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="CYCLES_PER_SECOND"></a><span class="summary-name">CYCLES_PER_SECOND</span> = <code title="int(1000/ REFRESH_RATE)">int(1000/ REFRESH_RATE)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="OUTER_WALL_WIDTH"></a><span class="summary-name">OUTER_WALL_WIDTH</span> = <code title="TILE_SIZE/ 2">TILE_SIZE/ 2</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GHOST_STATE"></a><span class="summary-name">GHOST_STATE</span> = <code title="{'Chase': 1, 'Scatter': 2, 'Fright': 3, 'Eaten': 4}">{'Chase': 1, 'Scatter': 2, 'Fright': 3, 'Eaten': 4}</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="PACMAN_STATE"></a><span class="summary-name">PACMAN_STATE</span> = <code title="{'Normal': 1, 'Energized': 2}">{'Normal': 1, 'Energized': 2}</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="PACMAN_RADIUS"></a><span class="summary-name">PACMAN_RADIUS</span> = <code title="6* TILE_SIZE/ 8">6* TILE_SIZE/ 8</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GHOST_RADIUS"></a><span class="summary-name">GHOST_RADIUS</span> = <code title="6* TILE_SIZE/ 8">6* TILE_SIZE/ 8</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DOT_RADIUS"></a><span class="summary-name">DOT_RADIUS</span> = <code title="TILE_SIZE/ 8">TILE_SIZE/ 8</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="ENERGIZER_RADIUS"></a><span class="summary-name">ENERGIZER_RADIUS</span> = <code title="TILE_SIZE/ 2">TILE_SIZE/ 2</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="BONUS_RADIUS"></a><span class="summary-name">BONUS_RADIUS</span> = <code title="TILE_SIZE/ 2">TILE_SIZE/ 2</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="WALL_SHAPE"></a><span class="summary-name">WALL_SHAPE</span> = <code title="&quot;rectangle&quot;">&quot;rectangle&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="PACMAN_SHAPE"></a><span class="summary-name">PACMAN_SHAPE</span> = <code title="&quot;oval&quot;">&quot;oval&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GHOST_SHAPE"></a><span class="summary-name">GHOST_SHAPE</span> = <code title="&quot;rectangle&quot;">&quot;rectangle&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DOT_SHAPE"></a><span class="summary-name">DOT_SHAPE</span> = <code title="&quot;oval&quot;">&quot;oval&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="ENERGIZER_SHAPE"></a><span class="summary-name">ENERGIZER_SHAPE</span> = <code title="&quot;oval&quot;">&quot;oval&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="BONUS_SHAPE"></a><span class="summary-name">BONUS_SHAPE</span> = <code title="&quot;oval&quot;">&quot;oval&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="WALL_OUTLINE"></a><span class="summary-name">WALL_OUTLINE</span> = <code title="&quot;blue&quot;">&quot;blue&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DOOR_COLOR"></a><span class="summary-name">DOOR_COLOR</span> = <code title="&quot;grey&quot;">&quot;grey&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="PACMAN_COLOR"></a><span class="summary-name">PACMAN_COLOR</span> = <code title="&quot;yellow&quot;">&quot;yellow&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GHOST_COLOR"></a><span class="summary-name">GHOST_COLOR</span> = <code title="{1: &quot;cyan&quot;, 2: &quot;pink&quot;, 3: &quot;orange&quot;, 4: &quot;red&quot;}">{1: &quot;cyan&quot;, 2: &quot;pink&quot;, 3: &quot;orange&quot;, 4: &quot;red&quot;}</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GHOST_FRIGHT_COLOR"></a><span class="summary-name">GHOST_FRIGHT_COLOR</span> = <code title="{1: &quot;blue&quot;, 2: &quot;white&quot;}">{1: &quot;blue&quot;, 2: &quot;white&quot;}</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DOT_COLOR"></a><span class="summary-name">DOT_COLOR</span> = <code title="&quot;white&quot;">&quot;white&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="ENERGIZER_COLOR"></a><span class="summary-name">ENERGIZER_COLOR</span> = <code title="{1: &quot;white&quot;, 2: &quot;black&quot;}">{1: &quot;white&quot;, 2: &quot;black&quot;}</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="BONUS_COLOR"></a><span class="summary-name">BONUS_COLOR</span> = <code title="&quot;red&quot;">&quot;red&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="TAG_GHOST"></a><span class="summary-name">TAG_GHOST</span> = <code title="&quot;Ghost&quot;">&quot;Ghost&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="TAG_PACMAN"></a><span class="summary-name">TAG_PACMAN</span> = <code title="&quot;Pacman&quot;">&quot;Pacman&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="TAG_WALL"></a><span class="summary-name">TAG_WALL</span> = <code title="&quot;Wall&quot;">&quot;Wall&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="TAG_DOOR"></a><span class="summary-name">TAG_DOOR</span> = <code title="&quot;Door&quot;">&quot;Door&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="TAG_DOT"></a><span class="summary-name">TAG_DOT</span> = <code title="&quot;Dot&quot;">&quot;Dot&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="TAG_ENERGIZER"></a><span class="summary-name">TAG_ENERGIZER</span> = <code title="&quot;Energizer&quot;">&quot;Energizer&quot;</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="TAG_BONUS"></a><span class="summary-name">TAG_BONUS</span> = <code title="&quot;Bonus&quot;">&quot;Bonus&quot;</code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="org-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Dec  6 23:58:24 2012
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
